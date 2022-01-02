@@ -1,0 +1,29 @@
+header {
+    height: 85px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    height: 45px;
+    width: 75px;
+}
+
+.menu {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: rgb(0, 123, 255);
+        }
+    }
+}
