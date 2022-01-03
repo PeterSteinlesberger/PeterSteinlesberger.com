@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainsectionComponent } from './mainsection/mainsection.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { ProjectSectionComponent } from './project-section/project-section.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProjectSectionComponent } from './project-section/project-section.compo
     NavbarComponent,
     MainsectionComponent,
     SkillsSectionComponent,
-    ProjectSectionComponent
+    ProjectSectionComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,5 @@
 .project-section {
     background-color: black;
- //   height: 150vh;
     width: 100%;
     padding-top: 65px;
     box-sizing: border-box;
@@ -12,12 +11,12 @@
 
 .project-container {
     display: flex;
-    justify-content: space-between;
+justify-content: space-between;
     align-items: center;
     height: 600px;
-    width: 100vw;
-    padding-left: 300px;
-    padding-right: 300px;
+    width: 100%;
+   padding-left: 300px;
+  padding-right: 300px;
     margin-top: 50px;
     box-sizing: border-box;
     background-color: rgba(67, 67, 68, 0.5);
@@ -57,61 +56,3 @@
         background-color: rgb(0, 123, 255);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.buttons-container {
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.project-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 80px;
-    border: solid 3px rgb(0, 123, 255);
-    margin: 3px;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-
-    &:hover {
-        background-color: rgb(0, 123, 255);
-    }
-}
-
-.projectimg-container {
-width: 1100px;
-margin-top: 25px;
-flex-wrap: wrap;
-}
-
-.project-img {
-    height: 420px;
-    width: 500px;
-    margin: 25px;
-}
-
-*/
