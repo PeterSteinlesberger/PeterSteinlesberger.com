@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainsectionComponent } from './mainsection/mainsection.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
+import { ProjectSectionComponent } from './project-section/project-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MainsectionComponent,
-    SkillsSectionComponent
+    SkillsSectionComponent,
+    ProjectSectionComponent
   ],
   imports: [
     BrowserModule,

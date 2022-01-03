@@ -1,13 +1,14 @@
 .main-section-container {
     background-color: black;
-    height: 88vh;
+    height: 90vh;
     width: 100%;
 }
 
 .profile-img {
     position: relative;
-    height: 76vh;
-    width: 50vw;
+    padding-top: 5vh;
+    height: 60vh;
+    width: 40vw;
     object-fit: cover;
     object-position: 80% 20%;
     z-index: 1;
@@ -17,21 +18,52 @@
     position: absolute;
     top: 0;
     right: 0; 
-    width: 62vw;
-    height: 100vh;
-    background-color: rgb(24, 24, 35, 0.5);
-   
+    width: 70vw;
+    height: 90vh;
+    background-color: rgba(67, 67, 68, 0.5);
 }
 
 .h1 {
     position: relative;
-     font-size: 76px;
-     margin-top: 300px;
+     font-size: 82px;
    padding-right: 300px;
+   margin-top: 260px;
+   margin-left:  90px;
+   
      color: white;
      z-index: 4;
 }
 
 .name-color {
     color: rgb(0, 123, 255);
+}
+
+.btn {
+    position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 702px;
+  right: 300px;
+  z-index: 4;
+  
+  width: 380px;
+  height: 88px;
+  border: solid 3px rgb(255,153,0);
+
+  &:hover {
+    background-color: rgb(255,153,0);
+    a {
+      color:white;
+      }
+  }
+
+  a {
+      color: rgb(255,153,0); 
+      font-size: 23px;
+      text-decoration: none;
+
+      
+  }
+
 }

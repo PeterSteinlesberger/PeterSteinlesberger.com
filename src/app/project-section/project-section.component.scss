@@ -1,0 +1,39 @@
+.project-container {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    padding-top: 65px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 80px;
+    border: solid 3px rgb(0, 123, 255);
+    margin: 3px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: rgb(0, 123, 255);
+    }
+}
+
+.project-img {
+    height: 300px;
+    width: 300px;
+}
