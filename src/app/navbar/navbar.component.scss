@@ -1,5 +1,5 @@
 header {
-    height: 85px;
+    height: 12vh;
     padding-left: 300px;
     padding-right: 300px;
     display: flex;
@@ -14,11 +14,14 @@ header {
 }
 
 .menu {
-    width: 320px;
+    position: relative;
+    width: 440px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 
     a {
+        font-size: 18px;
         text-decoration: none;
         color: white;
 
