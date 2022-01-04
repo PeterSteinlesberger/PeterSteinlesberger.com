@@ -7,6 +7,10 @@ body {
 color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 h2 {
     font-size: 50px;
     margin-bottom: 40px;
