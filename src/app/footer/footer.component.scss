@@ -1,0 +1,35 @@
+.footer-section {
+    height: 14vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: black;
+    font-size: 19px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section a {
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.icon-container {
+    display: flex;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+    margin-left: 15px;
+    margin-right: -6px;
+    object-fit: cover;
+}
