@@ -14,10 +14,10 @@
     z-index: 1;
 }
 
-.opacity-container {    
+.opacity-container {
     position: absolute;
     top: 0;
-    right: 0; 
+    right: 0;
     width: 70vw;
     height: 90vh;
     background-color: rgba(67, 67, 68, 0.5);
@@ -25,13 +25,13 @@
 
 .h1 {
     position: relative;
-     font-size: 82px;
-   padding-right: 300px;
-   margin-top: 260px;
-   margin-left:  90px;
-   
-     color: white;
-     z-index: 4;
+    font-size: 82px;
+    padding-right: 300px;
+    margin-top: 260px;
+    margin-left: 90px;
+
+    color: white;
+    z-index: 4;
 }
 
 .name-color {
@@ -40,30 +40,29 @@
 
 .btn {
     position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 702px;
-  right: 300px;
-  z-index: 4;
-  
-  width: 380px;
-  height: 88px;
-  border: solid 3px rgb(255,153,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // top: 660px;
+    top: 702px;
+    right: 300px;
+    z-index: 4;
+    width: 380px;
+    height: 88px;
+    border: solid 3px rgb(255, 153, 0);
 
-  &:hover {
-    background-color: rgb(255,153,0);
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 123, 255, 0.2);
+        border: solid 3px rgb(0, 123, 255);
+        a {
+            color: rgb(0, 153, 255);
+        }
+    }
+
     a {
-      color:white;
-      }
-  }
-
-  a {
-      color: rgb(255,153,0); 
-      font-size: 23px;
-      text-decoration: none;
-
-      
-  }
-
+        color: rgb(255, 153, 0);
+        font-size: 23px;
+        text-decoration: none;
+    }
 }
