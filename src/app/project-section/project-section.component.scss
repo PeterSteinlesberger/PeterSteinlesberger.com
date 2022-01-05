@@ -10,17 +10,21 @@
     align-items: center;
 }
 
+.headline {
+    margin-top: 0px;
+}
+
 .project-container {
     display: flex;
 justify-content: space-between;
     align-items: center;
-    height: 600px;
+    height: 500px;
     width: 100%;
    padding-left: 300px;
   padding-right: 300px;
-    margin-top: 50px;
+    margin-bottom: 50px;
     box-sizing: border-box;
-    background-color: rgba(67, 67, 68, 0.5);
+    background-color: rgba(67, 67, 68, 0.1);
 }
 
 .project-img {
@@ -47,13 +51,19 @@ justify-content: space-between;
     align-items: center;
     width: 160px;
     height: 60px;
-    border: solid 3px rgb(0, 123, 255);
     margin: 20px;
     color: white;
+    border: solid 3px white;
+    background-color: rgba(255, 255, 255, 0.2);
     font-size: 19px;
     text-decoration: none;
+    transition: all 155ms ease-in-out;
 
     &:hover {
-        background-color: rgb(0, 123, 255);
+        background-color: rgba(0, 123, 255, 0.2);
+        border: solid 3px rgb(0, 123, 255);
+        color: rgb(0, 153, 255);
     }
 }
+
+    

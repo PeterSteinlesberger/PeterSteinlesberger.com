@@ -1,5 +1,9 @@
 <header id="home" class="header">
-  <a href="#home"><img class="logo" src="assets/img/Logo/Logo2_white.png"></a>  
+  <a href="#home" (mouseover)="changeImg=true" (mouseout)="changeImg=false">
+    <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
+    <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
+  
+  </a>  
     <div class="menu">
 <a href="#home">HOME</a>
 <a href="#skills">SKILLS</a>
