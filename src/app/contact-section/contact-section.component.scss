@@ -1,6 +1,7 @@
  .about-section {
     height: 86vh;
     width: 100%;
+    padding-top: 160px;
     padding-left: 300px;
     padding-right: 300px;
     background-color: rgb(33, 33, 34);
@@ -11,7 +12,6 @@
 } 
 
 .contact-text-container {
-margin-top: 50px;
 height: 110px;
 width: 540px;
 line-height: 26px;
@@ -25,7 +25,6 @@ color: rgb(0, 123, 255);
 .contact-form-container {
 height: 500px;
 width: 626px;
-margin-top: 150px;
 }
 
 .text-color {

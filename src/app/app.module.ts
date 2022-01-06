@@ -11,6 +11,7 @@ import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     AboutSectionComponent,
     ContactSectionComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,

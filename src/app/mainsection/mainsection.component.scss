@@ -1,16 +1,16 @@
 .main-section-container {
     background-color: black;
-    height: 90vh;
+    height: 110vh;
     width: 100%;
 }
 
 .profile-img {
     position: relative;
-    padding-top: 5vh;
+padding-top: 5vh;
     height: 60vh;
     width: 40vw;
     object-fit: cover;
-    object-position: 0% 0%;
+    object-position: 0% 70%;
     z-index: 1;
 }
 
@@ -29,7 +29,6 @@
     padding-right: 300px;
     margin-top: 260px;
     margin-left: 90px;
-
     color: white;
     z-index: 4;
 }

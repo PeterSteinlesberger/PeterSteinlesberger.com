@@ -20,9 +20,8 @@ header {
     justify-content: space-between;
     z-index: 1;
    
-
     a {
-        font-size: 18px;
+        font-size: 15px;
         text-decoration: none;
         color: white; 
         transition: all 155ms ease-in-out;
@@ -30,9 +29,20 @@ header {
         &:hover {
             color: rgb(0, 123, 255);
         }
-    }
+    }  
+}
 
-    
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    transition: 200ms linear ;
+    box-sizing: border-box;
+}
 
-    
+.nofixed {
+    position: fixed;
+    transition: 200ms linear ;
+    top: -50px;
 }
