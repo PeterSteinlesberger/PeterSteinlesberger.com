@@ -1,11 +1,11 @@
-<header id="home" class="header" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'notfixed'" >
+<header class="header" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'notfixed'" >
   <a href="#home"  (mouseover)="changeImg=true" (mouseout)="changeImg=false"> 
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
   
   </a>  
     <div class="menu">
-<a routerLink="/">HOME</a>
+<a href="#home">HOME</a>
 <a href="#skills">SKILLS</a>
 <a href="#portfolio">PORTFOLIO</a>
 <a href="#aboutme">ABOUT ME</a>
