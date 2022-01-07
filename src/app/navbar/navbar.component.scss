@@ -1,5 +1,5 @@
 header {
-    height: 10vh;
+    height: 130px;
     padding-left: 300px;
     padding-right: 300px;
     display: flex;
@@ -15,7 +15,7 @@ header {
 
 .menu {
     position: relative;
-    width: 440px;
+    width: 604px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -34,6 +34,7 @@ header {
 
 .fixed {
     position: fixed;
+    height: 90px;
     width: 100%;
     top: 0px;
     z-index: 10;
