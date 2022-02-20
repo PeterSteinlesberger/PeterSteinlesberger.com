@@ -1,5 +1,5 @@
-<header class="header" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'notfixed'" >
-  <a href="#home"  (mouseover)="changeImg=true" (mouseout)="changeImg=false"> 
+<header id="navbar" class="header" (scroll)="onWindowScroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+  <a href="#home"  (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
   

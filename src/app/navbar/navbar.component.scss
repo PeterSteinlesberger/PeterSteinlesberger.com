@@ -1,11 +1,28 @@
+
+
 header {
-    height: 130px;
+    height: 90px;
     padding-left: 300px;
     padding-right: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+   box-sizing: border-box;
+  transition: 0.225s linear;
+}
+
+.nofixed {
+    position: static;    
+   transition: 0.225s linear;
+    top: -90px;
 }
 
 .logo {
@@ -30,20 +47,4 @@ header {
             color: rgb(0, 123, 255);
         }
     }  
-}
-
-.fixed {
-    position: fixed;
-    height: 90px;
-    width: 100%;
-    top: 0px;
-    z-index: 10;
-    transition: 200ms linear ;
-    box-sizing: border-box;
-}
-
-.nofixed {
-    position: fixed;
-    transition: 200ms linear ;
-    top: -50px;
 }

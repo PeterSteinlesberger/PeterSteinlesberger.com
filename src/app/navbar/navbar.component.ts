@@ -6,21 +6,24 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-changeImg= false;
+  changeImg = false;
 
-navbarfixed:boolean = false;
+  navbarfixed: boolean = false;
 
-@HostListener('window:scroll',['$event']) onscroll() {
-  if(window.scrollY > 1) {
-    this.navbarfixed = true;
-  } else {
-    this.navbarfixed = false;
+
+  @HostListener('window:scroll', ['$event']) onWindowScroll() {
+    if (window.scrollY > 20) {
+      this.navbarfixed = true;
+    }
+    else {
+      this.navbarfixed = false;
+    }
   }
-}
 
-ngOnInit(): void {
-    
-}
+
+  ngOnInit(): void {
+
+  }
 
 
 }
