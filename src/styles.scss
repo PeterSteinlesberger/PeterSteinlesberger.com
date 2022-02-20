@@ -1,33 +1,31 @@
 html {
-    scroll-padding-top: 90px; 
-  }
-
-body {
-    margin: 0;
-    
-    font-family: 'Sen', sans-serif;
-    position: relative;
-color: white;
-
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
+ // scroll-padding-top: 90px;
+  scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+body {
+  margin: 0;
+   margin: var(--top-spacing) auto;
+  font-family: "Sen", sans-serif;
+  position: relative;
+  color: white;
+}
 
 h2 {
-    font-size: 50px;
-    margin-bottom: 40px;
+  font-size: 50px;
+  margin-bottom: 40px;
 }
 
 h3 {
-    font-size: 38px;
-    color: rgb(0, 123, 255);
+  font-size: 38px;
+  color: rgb(0, 123, 255);
 }
 
-// style and color-deffinitons--> 
- //   color: #007bff;
-  //  color: rgb(255,153,0);
-  // if backgorund is back--- >  background-color: rgba(67, 67, 68, 0.5);
-   // else
-   //  background-color: rgb(33, 33, 34);
+// style and color-deffinitons-->
+//   color: #007bff;
+//  color: rgb(255,153,0);
+// if backgorund is back--- >  background-color: rgba(67, 67, 68, 0.5);
+// else
+//  background-color: rgb(33, 33, 34);
