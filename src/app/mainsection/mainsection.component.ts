@@ -10,6 +10,7 @@ export class MainsectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

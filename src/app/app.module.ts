@@ -12,7 +12,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
-
+import  AOS  from 'aos';
+import 'aos/dist/aos.css';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AOS
   ],
   providers: [],
   bootstrap: [AppComponent]

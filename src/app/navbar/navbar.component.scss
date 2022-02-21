@@ -1,6 +1,7 @@
 
 
 header {
+    position: fixed;
     height: 90px;
     padding-left: 300px;
     padding-right: 300px;
@@ -14,10 +15,11 @@ header {
 .fixed {
     position: fixed;
     width: 100%;
-    top: 0;
+    top:0;
     z-index: 10;
    box-sizing: border-box;
-  transition: 0.225s linear;   
+  transition: 0.225s linear; 
+ 
  // border-bottom: 1px solid rgba(67, 67, 68, 0.5);
 }
 

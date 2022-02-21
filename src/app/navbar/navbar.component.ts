@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
 
   @HostListener('window:scroll', ['$event']) onWindowScroll() {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 1) {
       this.navbarfixed = true;
     }
     else {
