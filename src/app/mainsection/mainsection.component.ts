@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import AOS from 'aos';
+import * as Aos from 'aos';
+
 
 @Component({
   selector: 'app-mainsection',
@@ -7,11 +8,13 @@ import AOS from 'aos';
   styleUrls: ['./mainsection.component.scss']
 })
 export class MainsectionComponent implements OnInit {
+  AOS: any;
+
 
   constructor() { }
 
   ngOnInit(): void {
-AOS.init();
+    Aos.init();
   }
 
 }

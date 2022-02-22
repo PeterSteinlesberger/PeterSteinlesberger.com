@@ -9,24 +9,22 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: black;
- 
 }
 
 .fixed {
-    position: fixed;
+  //  position: fixed;
     width: 100%;
-    top:0;
     z-index: 10;
    box-sizing: border-box;
   transition: 0.225s linear; 
  
  // border-bottom: 1px solid rgba(67, 67, 68, 0.5);
-}
+}  
 
 .nofixed {
     position: static;    
    transition: 0.225s linear;
-   top: -90px;
+  // top: -90px;
 }
 
 .logo {
