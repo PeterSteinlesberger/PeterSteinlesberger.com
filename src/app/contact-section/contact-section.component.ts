@@ -1,6 +1,4 @@
-// import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-import { HttpClient } from '@angular/common/http';
+  import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -32,9 +30,7 @@ export class ContactSectionComponent implements OnInit {
     },
   };
 
-  ngOnInit(): void {
-
-  }
+ 
 
   onSubmit(ngForm: any) {
     if (ngForm.submitted && ngForm.form.valid) {
@@ -46,6 +42,10 @@ export class ContactSectionComponent implements OnInit {
           complete: () => console.info('send post complete'),
         });
     }
+
+  } 
+
+  ngOnInit(): void {
 
   }
   }

@@ -1,31 +1,32 @@
-
 <div id="contact" class="about-section">
-    <div class="contact-text-container">
-       <h2 class="h2 font-size">Let's talk business</h2>
-       <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
-    </div>
-    <div class="contact-form-container">
+  <div class="contact-text-container">
+    <h2 class="h2 font-size">Let's talk business</h2>
+    <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+  </div>
+  <div class="contact-form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
-          <label for="fname">Name</label>
-          <input type="text" placeholder="What is your Name?" id="name" required [(ngModel)]="contact.name" name="name" #name="ngModel" />
+        <label class="text-color">Name</label>
+        <input class="input-field" type="text" placeholder="What is your Name?" id="name" required [(ngModel)]="contact.name" name="name"
+          #name="ngModel" />
       </div>
       <div>
-          <label for="country">E-Mail address</label>
-          <input type="email" placeholder="What is your Email Address?" [(ngModel)]="contact.email" name="email" #email="ngModel" />
+        <label class="text-color">E-Mail address</label>
+        <input class="input-field" type="email" placeholder="What is your Email Address?" [(ngModel)]="contact.email" name="email"
+          #email="ngModel" />
       </div>
       <div>
-          <label for="subject">Message</label>
-          <textarea name="" id="" rows="10" placeholder="What would you like to tell me?" required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
+        <label class="text-color">Message</label>
+        <textarea class="input-field dialogbox" name="" id="" rows="10" placeholder="What would you like to tell me?" required
+          [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
       </div>
       <div class="btn-container">
-          <button type="submit" [disabled]="!contactForm.form.valid">
-        Send
-      </button>
+        <button class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET STARTET</button>
       </div>
-  </form>
-
- </div> 
+    </form>
+  </div>
+  
+  
   <!-- <div class="contact-form-container">
          <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <p class="text-color">Name</p>
@@ -36,4 +37,4 @@
             <input #message="ngModel" [(ngModel)]="contact.message" message="message" class="input-field dialogbox">
             <button class="contact-button">LET'S GET STARTET</button>
          </form>
-    </div> -->
+    </div>  -->

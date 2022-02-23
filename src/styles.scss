@@ -5,10 +5,15 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body { 
+ height: 100%; 
+}
+
 body {
   margin: 0;
  //  margin: var(--top-spacing) auto;
   font-family: "Sen", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   position: relative;
   color: white;
 }
@@ -23,12 +28,6 @@ h3 {
   color: rgb(0, 123, 255);
 }
 
-// style and color-deffinitons-->
-//   color: #007bff;
-//  color: rgb(255,153,0);
-// if backgorund is back--- >  background-color: rgba(67, 67, 68, 0.5);
-// else
-//  background-color: rgb(33, 33, 34);
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
