@@ -1,26 +1,26 @@
 <div id="contact" class="about-section">
   <div class="contact-text-container">
-    <h2 class="h2 font-size">Let's talk business</h2>
-    <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+    <h2 data-aos-delay="100" data-aos="fade-right" class="h2 font-size">Let's talk business</h2>
+    <p data-aos-delay="200" data-aos="fade-right">Now that you know a lot about me, let me know if you are interested to work with me.</p>
   </div>
   <div class="contact-form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
-        <p class="text-color">Name</p>
-        <input class="input-field" type="text" placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
+        <p data-aos-delay="100" data-aos="fade-left" class="text-color">Name</p>
+        <input data-aos-delay="250" data-aos="fade-left" class="input-field" type="text" placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
           #name="ngModel" />
       </div>
       <div>
-        <p class="text-color">E-Mail</p>
-        <input class="input-field" type="email" placeholder="Your Email address..." [(ngModel)]="contact.email" name="email"
+        <p data-aos-delay="150" data-aos="fade-left" class="text-color">E-Mail</p>
+        <input data-aos-delay="300" data-aos="fade-left" class="input-field" type="email" placeholder="Your Email address..." [(ngModel)]="contact.email" name="email"
           #email="ngModel" />
       </div>
       <div>
-        <p class="text-color">Message</p>
-        <textarea class="input-field textarea" name="" id="" rows="10" placeholder="Your message..." required
+        <p data-aos-delay="200" data-aos="fade-left" class="text-color">Message</p>
+        <textarea data-aos-delay="350" data-aos="fade-left" class="input-field textarea" name="" id="" rows="10" placeholder="Your message..." required
           [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
       </div>
-      <div class="btn-container">
+      <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
         <button class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET STARTET</button>
       </div>
     </form>
