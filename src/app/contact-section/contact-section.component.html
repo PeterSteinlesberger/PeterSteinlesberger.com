@@ -6,18 +6,18 @@
   <div class="contact-form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
-        <p class="text-color"> Your Name</p>
-        <input class="input-field" type="text" placeholder="What is your Name?" id="name" required [(ngModel)]="contact.name" name="name"
+        <p class="text-color">Name</p>
+        <input class="input-field" type="text" placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
           #name="ngModel" />
       </div>
       <div>
-        <p class="text-color">E-Mail address</p>
-        <input class="input-field" type="email" placeholder="What is your Email Address?" [(ngModel)]="contact.email" name="email"
+        <p class="text-color">E-Mail</p>
+        <input class="input-field" type="email" placeholder="Your Email address..." [(ngModel)]="contact.email" name="email"
           #email="ngModel" />
       </div>
       <div>
         <p class="text-color">Message</p>
-        <textarea class="input-field textarea" name="" id="" rows="10" placeholder="What would you like to tell me?" required
+        <textarea class="input-field textarea" name="" id="" rows="10" placeholder="Your message..." required
           [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
       </div>
       <div class="btn-container">
