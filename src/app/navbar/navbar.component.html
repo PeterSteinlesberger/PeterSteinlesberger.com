@@ -2,12 +2,14 @@
 (window:scroll)="navigation.scroll()"
 (window:resize)="navigation.scroll()"
 id="navbar"
-[class.fixed]="navigation.router.url !== '/imprint'"   class="header" (scroll)="onWindowScroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
-  <a data-aos-delay="600" data-aos="fade-right" href="#home"  (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
+[class.fixed]="navigation.router.url !== '/imprint'" 
+class="header">
+
+  <a data-aos-delay="600" data-aos="fade-right" (click)="toggleNav($event)"  (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
-  
   </a>  
+  
     <div class="menu">
 <a data-aos-delay="600" data-aos="fade-left" routerLink="#home" (click)="navigation.forceNavigate('home')">HOME</a>
 <a data-aos-delay="500" data-aos="fade-left" routerLink="#skills" (click)="navigation.forceNavigate('skills')">SKILLS</a>
