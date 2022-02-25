@@ -1,5 +1,3 @@
-
-
 header {
     position: fixed;
     height: 90px;
@@ -12,19 +10,15 @@ header {
 }
 
 .fixed {
-  //  position: fixed;
-    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    //  width: 100%;
     z-index: 10;
-   box-sizing: border-box;
-  transition: 0.225s linear; 
- 
- // border-bottom: 1px solid rgba(67, 67, 68, 0.5);
-}  
-
-.nofixed {
-    position: static;    
-   transition: 0.225s linear;
-  // top: -90px;
+    //  box-sizing: border-box;
+    //  transition: 0.225s linear;
+    // border-bottom: 1px solid rgba(67, 67, 68, 0.5);
 }
 
 .logo {
@@ -37,16 +31,16 @@ header {
     width: 604px;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
-   
+    z-index: 100;
+
     a {
         font-size: 15px;
         text-decoration: none;
-        color: white; 
+        color: white;
         transition: all 155ms ease-in-out;
 
         &:hover {
             color: rgb(0, 123, 255);
         }
-    }  
+    }
 }

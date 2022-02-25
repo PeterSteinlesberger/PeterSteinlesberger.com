@@ -1,5 +1,7 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { InViewPortService } from '../in-view-port.service';
+import { NavigationService } from '../navigation.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,22 +10,18 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   changeImg = false;
 
-  navbarfixed: boolean = false;
+  constructor(
+    public navigation: NavigationService,
+    public inviewport: InViewPortService
+  ) {}
 
+  navOpened = false;
 
-  @HostListener('window:scroll', ['$event']) onWindowScroll() {
-    if (window.scrollY > 1) {
-      this.navbarfixed = true;
+  ngOnInit(): void {}
+  
+ toggleNav(event) {
+      console.log(event);
+      this.navOpened = !this.navOpened;
     }
-    else {
-      this.navbarfixed = false;
-    }
-  }
-
-
-  ngOnInit(): void {
-
-  }
-
 
 }
