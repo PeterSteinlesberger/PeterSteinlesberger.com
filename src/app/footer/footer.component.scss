@@ -1,7 +1,7 @@
 
 
 .footer-section {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -27,8 +27,9 @@
 }
 
 .icon-container {
+    width: 80px;
     display: flex;
-
+    justify-content: space-between;
     a {
         text-decoration: none;
     }
@@ -37,7 +38,4 @@
 .icon {
     height: 35px;
     width: 35px;
-    margin-left: 15px;
-    margin-right: -6px;
-    object-fit: cover;
 }

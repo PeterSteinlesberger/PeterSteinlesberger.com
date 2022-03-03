@@ -2,9 +2,15 @@
     <p>Peter Steinlesberger &#169;2022</p>
     <a routerLink="/imprint">Impressum - Legal Notice</a>
     <div class="icon-container">
-        <a href="https://github.com/PeterSteinlesberger?tab=overview&from=2021-12-01&to=2021-12-31" target="_blank"><img class="icon" src="assets/img/Icons/github.png"></a>
-        <a href="https://www.linkedin.com/in/peter-steinlesberger-a84067229/"><img class="icon" src="assets/img/Icons/linkedin.png"></a>
+        <a (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
+            <img *ngIf="!changeImg"  class="icon" src="assets/img/Icons/github_white.png">
+            <img *ngIf="changeImg"  class="icon" src="assets/img/Icons/github_blue.png">
+          </a>  
+          <a (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
+            <img *ngIf="!changeImg"  class="icon" src="assets/img/Icons/linkedin_white.png">
+            <img *ngIf="changeImg"  class="icon" src="assets/img/Icons/linkedin_blue.png">
+          </a>  
+        <!-- <a href="https://github.com/PeterSteinlesberger?tab=overview&from=2021-12-01&to=2021-12-31" target="_blank"><img class="icon" src="assets/img/Icons/github.png"></a>
+        <a href="https://www.linkedin.com/in/peter-steinlesberger-a84067229/"><img class="icon" src="assets/img/Icons/linkedin.png"></a> -->
     </div>
-
-
 </div>
