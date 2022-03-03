@@ -1,43 +1,38 @@
 header {
     position: fixed;
-    height: 90px;
+    left: 0;
+    right: 0;
+    height: 74px;
     padding-left: 300px;
     padding-right: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    z-index: 0;
 }
 
-.fixed {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    //  width: 100%;
-    z-index: 10;
-    //  box-sizing: border-box;
-    //  transition: 0.225s linear;
-    // border-bottom: 1px solid rgba(67, 67, 68, 0.5);
-}
 
 .logo {
     height: 50px;
     width: 90px;
 }
 
+
 .menu {
     position: relative;
-    width: 604px;
+    display: block;
+    width: 600px;
     display: flex;
-    justify-content: space-between;
-    z-index: 100;
+    justify-content: space-between; 
+   
+
 
     a {
-        font-size: 15px;
+        font-size: 14px;
         text-decoration: none;
         color: white;
-        transition: all 155ms ease-in-out;
+       // transition: all 100ms linear;
 
         &:hover {
             color: rgb(0, 123, 255);
