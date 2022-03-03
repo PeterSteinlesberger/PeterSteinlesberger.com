@@ -3,7 +3,7 @@
 (window:resize)="navigation.scroll()"
 #navbar
 class="header">
-  <a data-aos-delay="600" data-aos="fade-right" (click)="toggleNav($event)"  (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
+  <a data-aos-delay="600" data-aos="fade-right" (click)="navigation.forceNavigate('home')" (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
   </a>  
@@ -15,4 +15,3 @@ class="header">
 <a data-aos-delay="200" data-aos="fade-left" routerLink="#contact" (click)="navigation.forceNavigate('contact')">CONTACT</a>
     </div>
 </header>
-<!-- [class.fixed]="navigation.router.url !== '/imprint'"  -->

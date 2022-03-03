@@ -25,15 +25,11 @@ header {
     width: 600px;
     display: flex;
     justify-content: space-between; 
-   
-
-
     a {
         font-size: 14px;
         text-decoration: none;
         color: white;
        // transition: all 100ms linear;
-
         &:hover {
             color: rgb(0, 123, 255);
         }

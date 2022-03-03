@@ -1,22 +1,29 @@
 
 
 .footer-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 74px;
     width: 100%;
     padding-left: 300px;
     padding-right: 300px;
     background-color: black;
-    font-size: 16px;
+    font-size: 14px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+            color: rgb(0, 123, 255);
+        }
+    }
 
-.footer-section a {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
 }
 
 .icon-container {
