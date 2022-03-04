@@ -8,9 +8,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: transparent;
     z-index: 100;
-    opacity: 1;
+    transition: all 125ms linear;
 }
 
 
@@ -38,5 +38,5 @@ header {
 
 .active {
     color: rgb(0, 123, 255);
-    font-size: 16px;
+   // font-size: 16px;
 }

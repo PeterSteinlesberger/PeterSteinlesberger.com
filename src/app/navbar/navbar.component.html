@@ -1,7 +1,6 @@
-<header 
+<header id="navbar"
 (window:scroll)="navigation.scroll()"
 (window:resize)="navigation.scroll()"
-#navbar
 class="header">
   <a data-aos-delay="600" data-aos="fade-right" (click)="navigation.forceNavigate('home')" (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
@@ -10,7 +9,7 @@ class="header">
     <div class="menu">
 <a data-aos-delay="600" data-aos="fade-left" [class.active]="section == 'HOME'" (click)="navigation.forceNavigate('home'); section ='HOME'">HOME</a>
 <a data-aos-delay="500" data-aos="fade-left" [class.active]="section == 'SKILLS'" (click)="navigation.forceNavigate('skills'); section ='SKILLS'">SKILLS</a>
-<a data-aos-delay="400" data-aos="fade-left" [class.active]="section == 'PORTFOLIO<'" (click)="navigation.forceNavigate('portfolio'); section ='PORTFOLIO'">PORTFOLIO</a>
+<a data-aos-delay="400" data-aos="fade-left" [class.active]="section == 'PORTFOLIO'" (click)="navigation.forceNavigate('portfolio'); section ='PORTFOLIO'">PORTFOLIO</a>
 <a data-aos-delay="300" data-aos="fade-left" [class.active]="section == 'ABOUT ME'" (click)="navigation.forceNavigate('aboutme'); section ='ABOUT ME'">ABOUT ME</a>
 <a data-aos-delay="200" data-aos="fade-left" [class.active]="section == 'CONTACT'" (click)="navigation.forceNavigate('contact'); section  ='CONTACT'">CONTACT</a>
     </div>

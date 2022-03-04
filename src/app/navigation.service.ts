@@ -22,12 +22,16 @@ export class NavigationService {
   scroll() {
     let navbar = document.getElementById('navbar') as HTMLElement;
     if (this.router.url !== '/imprint') {
-      if (window.scrollY >= window.innerHeight) {
+      if (window.scrollY + window.innerHeight >= window.innerHeight) {
         navbar.style.top = '0';
-        navbar.style.opacity = '0';
-      } else {
-        navbar.style.top = window.innerHeight - window.scrollY + 'px';
-      }
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+        if(window.scrollY == 0) {
+          navbar.style.backgroundColor = 'transparent';
+        }
+      } 
+      // else { 
+      //  // navbar.style.top = window.innerHeight - window.scrollY + 'px';
+      // }
     }
   }
 

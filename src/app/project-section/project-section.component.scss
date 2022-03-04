@@ -15,24 +15,22 @@
 
 .project-container {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     height: 500px;
     width: 100%;
-   padding-left: 300px;
-  padding-right: 300px;
+    padding-left: 300px;
+    padding-right: 300px;
     margin-bottom: 50px;
     box-sizing: border-box;
     line-height: 24px;
     background-color: rgba(67, 67, 68, 0.1);
-
 }
 
 .project-img {
     height: 400px;
     width: 600px;
 }
-
 
 .content-container {
     display: flex;
@@ -44,7 +42,6 @@ justify-content: space-between;
 .btn-container {
     display: flex;
     margin-top: 40px;
-
 }
 
 .project-btn {
@@ -67,5 +64,3 @@ justify-content: space-between;
         color: rgb(0, 153, 255);
     }
 }
-
-    
