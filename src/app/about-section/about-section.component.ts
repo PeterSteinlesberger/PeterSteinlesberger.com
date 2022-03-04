@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-section.component.scss']
 })
 export class AboutSectionComponent implements OnInit {
+  changeImg = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

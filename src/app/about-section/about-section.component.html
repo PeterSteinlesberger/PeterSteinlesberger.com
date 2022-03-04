@@ -1,31 +1,38 @@
 <div id="aboutme" class="project-section">
     <h2 data-aos="zoom-out-up">About me</h2>
     <div class="content-container">
-       <p data-aos-delay="100" data-aos-duration="300" data-aos="flip-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium error maxime illo nostrum dolores, sit nulla
-        quae.</p> 
-        <p data-aos-delay="150" data-aos-duration="300" data-aos="flip-up">Accusantium labore, facere voluptatibus, totam, molestiae maxime earum et tempora illum quisquam
-        voluptate? </p>
-        <p data-aos-delay="200" data-aos-duration="300" data-aos="flip-up">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam in quae voluptatem incidunt nam
-        inventore.</p> 
-        <p data-aos-delay="250" data-aos-duration="300" data-aos="flip-up">Labore non voluptate quibusdam aut inventore eius culpa deleniti error natus. Dolor dolore adipisci
-        odit?</p> 
-        <p data-aos-delay="300" data-aos-duration="300" data-aos="flip-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam ab minima reiciendis repellat ipsam
-        incidunt nam eaque, natus mollitia voluptas magni illo aut eos amet earum, omnis vitae blanditiis.</p>
-        <p data-aos-delay="350" data-aos-duration="300" data-aos="flip-up">o nostrum dolores, sit nulla quae. Accusantium labore, facere voluptatibus, totam, molestiae maxime earum et
-        tempora illum quisquam voluptate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam in quae
-        voluptatem incidunt nam inventore.</p> 
-        <p data-aos-delay="400" data-aos-duration="300" data-aos="flip-up">Labore non voluptate quibusdam aut inventore eius culpa deleniti error natus.
-        Dolor dolore adipisci odit?</p>         
-       </div>
+        <p data-aos-delay="100" data-aos-duration="300" data-aos="flip-up">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Laudantium error maxime illo nostrum dolores, sit nulla
+            quae.</p>
+        <p data-aos-delay="150" data-aos-duration="300" data-aos="flip-up">Accusantium labore, facere voluptatibus,
+            totam, molestiae maxime earum et tempora illum quisquam
+            voluptate? </p>
+        <p data-aos-delay="200" data-aos-duration="300" data-aos="flip-up">Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Totam in quae voluptatem incidunt nam
+            inventore.</p>
+        <p data-aos-delay="250" data-aos-duration="300" data-aos="flip-up">Labore non voluptate quibusdam aut inventore
+            eius culpa deleniti error natus. Dolor dolore adipisci
+            odit?</p>
+        <p data-aos-delay="300" data-aos-duration="300" data-aos="flip-up">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Totam quibusdam ab minima reiciendis repellat ipsam
+            incidunt nam eaque, natus mollitia voluptas magni illo aut eos amet earum, omnis vitae blanditiis.</p>
+        <p data-aos-delay="350" data-aos-duration="300" data-aos="flip-up">o nostrum dolores, sit nulla quae.
+            Accusantium labore, facere voluptatibus, totam, molestiae maxime earum et
+            tempora illum quisquam voluptate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam in quae
+            voluptatem incidunt nam inventore.</p>
+        <p data-aos-delay="400" data-aos-duration="300" data-aos="flip-up">Labore non voluptate quibusdam aut inventore
+            eius culpa deleniti error natus.
+            Dolor dolore adipisci odit?</p>
+    </div>
 
     <div class="about-img-container">
         <img data-aos-delay="200" data-aos="fade-right" class="about-img" src="assets/img/mountains.png">
-        <div data-aos-delay="700"  data-aos="zoom-in" class="motto-container" >
-           <span>"You have to try the impossible to</span>  <br> <span> the best possible!"</span> 
+        <div data-aos-delay="700" data-aos="zoom-in" class="motto-container">
+            <span>"You have to try the impossible to</span> <br> <span> the best possible!"</span>
         </div>
         <div data-aos-delay="400" data-aos="fade-left" class="info-container">
-            <p data-aos-delay="500" data-aos="fade-left" class="text-color" >E M A I L</p>
-           <span data-aos-delay="650" data-aos="fade-left">PeterSteinlesberger@mail.de</span> 
+            <p data-aos-delay="500" data-aos="fade-left" class="text-color">E M A I L</p>
+            <span data-aos-delay="650" data-aos="fade-left">PeterSteinlesberger@mail.de</span>
             <p data-aos-delay="550" data-aos="fade-left" class="text-color">R O L E</p>
             <span data-aos-delay="700" data-aos="fade-left">Frontend Developer</span>
             <p data-aos-delay="600" data-aos="fade-left" class="text-color">P H O N E</p>
@@ -53,8 +60,14 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur illo unde soluta ut, deleniti
         assumenda dolore fugit, reiciendis earum similique enim pariatur. Blanditiis cumque doloribus quaerat dolore
         aperiam sunt.
-        <br> <br> <br>    
+        <br> <br> <br>
     </div>
-  <div class="signature-container">  <img data-aos-delay="200" data-aos="fade-up" class="signature-img" src="assets/img/white_signature.png"></div>
-   
+    <div  class="signature-container"> <img data-aos-delay="200" data-aos="fade-up" class="signature-img"
+            src="assets/img/white_signature.png"></div>
+
+    <a href="#contact" class="contact-btn" (mouseenter)="changeImg= true" (mouseleave)="changeImg= false" >
+        <p data-aos-delay="150" data-aos="fade-down" class="btn-text">CONTACT</p>
+            <img data-aos="fade-down" *ngIf="!changeImg" class="arrow-img" src="assets/img/Icons/arrow_down_orange.png">
+            <img data-aos="fade-down" *ngIf="changeImg" class="arrow-img" src="assets/img/Icons/arrow_down_blue.png">
+    </a>
 </div>

@@ -77,7 +77,7 @@ input, textarea {
     margin-top: 40px;
     margin-left: 2px;
     font-size: 17px;
-    border: solid 3px rgb(255, 153, 0);
+    border: solid 2px rgb(255, 153, 0);
     color: rgb(255, 163, 24);
     background-color: rgba(255, 153, 0, 0.1);
     transition: all 155ms ease-in-out;
@@ -86,6 +86,6 @@ input, textarea {
         cursor: pointer;
         background-color: rgba(0, 123, 255, 0.2);
         color: rgb(0, 153, 255);
-        border: solid 3px rgb(0, 123, 255);
+        border: solid 2px rgb(0, 123, 255);
     }
 }
