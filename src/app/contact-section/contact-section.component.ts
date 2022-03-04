@@ -10,14 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class ContactSectionComponent implements OnInit {
 
 sentMessage = false;
-
-  constructor(private http: HttpClient) { }
-
-  contact = {
+showDialog = false;
+ contact = {
     name: '',
     email: '',
     message: '',
   };
+
+  constructor(private http: HttpClient) { }
+
+  ngOnInit(): void {
+  }
 
   post = {
     endPoint: 'http://peter-steinlesberger.developerakademie.com/sendMail.php', // Ex. www.my-domain/sendMail.php
@@ -47,10 +50,20 @@ sentMessage = false;
           complete: () => console.info('send post complete'),
         });
         this.sentMessage = true;
+        this.switchInfoBox();
     } 
   } 
 
-  ngOnInit(): void {
-
+  switchInfoBox() {
+    if(this.sentMessage) {
+      setTimeout(() => {
+        console.log('function works');
+       document.getElementById('infoSent').style.display ="none";
+       this.showDialog = true;
+      }, 2400);
+    }
   }
+
+
+  
   }

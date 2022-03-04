@@ -103,10 +103,10 @@ input, textarea {
     background-color: rgba(0, 123, 255, 0.2);
         color: rgb(0, 153, 255);
         border: solid 2px rgb(0, 123, 255);
-    animation: animate 800ms ease-out 1 both;
+    animation: animateToOrange 1100ms ease-out 1 both;
 }
 
-@keyframes animate {
+@keyframes animateToOrange {
     from {
         opacity: 0.5;
         transform: skew(67deg);
@@ -117,5 +117,35 @@ input, textarea {
         border: solid 2px rgb(255, 153, 0);
         color: rgb(255, 163, 24);
         background-color: rgba(255, 153, 0, 0.1);
+    }
+}
+
+.info-message {
+    position: relative;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    height: 70px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 2px;
+    font-size: 20px;
+    border: solid 2px rgb(255, 153, 0);
+    color: rgb(255, 163, 24);
+    background-color: rgba(255, 153, 0, 0.1);
+    animation: animateToBlue 1100ms ease-out 1 both;
+}
+
+@keyframes animateToBlue {
+    from {
+        opacity: 0.5;
+        transform: skew(67deg);
+    }
+    to {
+        opacity: 1;
+        transform:skew(180deg);
+        background-color: rgba(0, 123, 255, 0.2);
+        color: rgb(0, 153, 255);
+        border: solid 2px rgb(0, 123, 255);
     }
 }
