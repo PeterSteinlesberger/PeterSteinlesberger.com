@@ -26,9 +26,15 @@
           #message="ngModel"></textarea>
       </div>
       <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
-        <button class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET STARTET</button>
+        <button *ngIf="!sentMessage" class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET
+          STARTET</button>
       </div>
     </form>
-    <div *ngIf="sentMessage" id="infoBox" class="info-message"> <p class="info-headline">Message sent.</p> <p> Thank you for your interest.
-      Will reply soon...</p></div>
+    <div *ngIf="sentMessage" class="info-sent">
+      <p>MESSAGE SENT</p>
+    </div>
+    <div *ngIf="sentMessage" class="info-message"> 
+      <p>Thank you for your interest. Will reply soon...</p>
+    </div>
   </div>
+</div>
