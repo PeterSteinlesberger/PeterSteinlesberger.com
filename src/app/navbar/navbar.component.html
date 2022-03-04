@@ -8,10 +8,10 @@ class="header">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
   </a>  
     <div class="menu">
-<a data-aos-delay="600" data-aos="fade-left" routerLink="#home" (click)="navigation.forceNavigate('home')">HOME</a>
-<a data-aos-delay="500" data-aos="fade-left" routerLink="#skills" (click)="navigation.forceNavigate('skills')">SKILLS</a>
-<a data-aos-delay="400" data-aos="fade-left" routerLink="#portfolio" (click)="navigation.forceNavigate('portfolio')">PORTFOLIO</a>
-<a data-aos-delay="300" data-aos="fade-left" routerLink="#aboutme" (click)="navigation.forceNavigate('aboutme')">ABOUT ME</a>
-<a data-aos-delay="200" data-aos="fade-left" routerLink="#contact" (click)="navigation.forceNavigate('contact')">CONTACT</a>
+<a data-aos-delay="600" data-aos="fade-left" [class.active]="section == 'HOME'" (click)="navigation.forceNavigate('home'); section ='HOME'">HOME</a>
+<a data-aos-delay="500" data-aos="fade-left" [class.active]="section == 'SKILLS'" (click)="navigation.forceNavigate('skills'); section ='SKILLS'">SKILLS</a>
+<a data-aos-delay="400" data-aos="fade-left" [class.active]="section == 'PORTFOLIO<'" (click)="navigation.forceNavigate('portfolio'); section ='PORTFOLIO'">PORTFOLIO</a>
+<a data-aos-delay="300" data-aos="fade-left" [class.active]="section == 'ABOUT ME'" (click)="navigation.forceNavigate('aboutme'); section ='ABOUT ME'">ABOUT ME</a>
+<a data-aos-delay="200" data-aos="fade-left" [class.active]="section == 'CONTACT'" (click)="navigation.forceNavigate('contact'); section  ='CONTACT'">CONTACT</a>
     </div>
 </header>

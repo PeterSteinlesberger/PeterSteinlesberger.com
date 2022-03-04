@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { NavigationService } from './navigation.service';
 import { InViewPortService } from './in-view-port.service';
 import { ViewportScroller } from '@angular/common';
-import { Router, Scroll } from '@angular/router';
+import { Router, RouterModule, Scroll } from '@angular/router';
 import { filter } from 'rxjs';
 
 
@@ -43,9 +43,7 @@ import { filter } from 'rxjs';
     MatButtonToggleModule,
     MatButtonModule,
     FormsModule,
-    
-
-    
+    RouterModule
   ],
   providers: [
     NavigationService,

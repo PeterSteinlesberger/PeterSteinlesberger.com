@@ -8,6 +8,7 @@ import { NavigationService } from '../navigation.service';
 })
 export class NavbarComponent implements OnInit {
   changeImg = false;
+  section : string;
 
   constructor(
     public navigation: NavigationService, 
@@ -23,4 +24,7 @@ export class NavbarComponent implements OnInit {
       this.navOpened = !this.navOpened;
     }
 
-}
+ 
+
+}  
+ 

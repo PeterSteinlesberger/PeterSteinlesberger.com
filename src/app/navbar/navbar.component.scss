@@ -9,7 +9,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    z-index: 0;
+    z-index: 100;
+    opacity: 1;
 }
 
 
@@ -21,7 +22,6 @@ header {
 
 .menu {
     position: relative;
-    display: block;
     width: 600px;
     display: flex;
     justify-content: space-between; 
@@ -34,4 +34,9 @@ header {
             color: rgb(0, 123, 255);
         }
     }
+}
+
+.active {
+    color: rgb(0, 123, 255);
+    font-size: 16px;
 }

@@ -6,14 +6,17 @@ export class NavigationService {
   constructor(public router: Router) {}
 
   forceNavigate(name: string) {
-    this.router
-      .navigate(['/'], { fragment: name })
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    document.getElementById(name).scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+    // this.router
+    //   .navigate(['/'], { fragment: name })
+    //   .then((result) => {
+    //     console.log(result);
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });
   }
 
   scroll() {
@@ -21,6 +24,7 @@ export class NavigationService {
     if (this.router.url !== '/imprint') {
       if (window.scrollY >= window.innerHeight) {
         navbar.style.top = '0';
+        navbar.style.opacity = '0';
       } else {
         navbar.style.top = window.innerHeight - window.scrollY + 'px';
       }

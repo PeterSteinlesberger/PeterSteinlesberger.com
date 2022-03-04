@@ -1,7 +1,8 @@
 .imprint-container {
-    height: 100%;
-    padding-top: 76px;
-    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+   flex: 1;
+    padding-top: 130px;
     padding-left: 300px;
     background-color: rgb(33, 33, 34);
     font-size: 20px;
