@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactSectionComponent implements OnInit {
 
+sentMessage = false;
+
   constructor(private http: HttpClient) { }
 
   contact = {
@@ -31,7 +33,10 @@ export class ContactSectionComponent implements OnInit {
   };
 
  
-
+/**
+ * Control the form-field if all entries are valid, if not a error pop up in the console
+ * @param ngForm 
+ */
   onSubmit(ngForm: any) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
@@ -41,8 +46,8 @@ export class ContactSectionComponent implements OnInit {
           error: (error) => console.error(error),
           complete: () => console.info('send post complete'),
         });
-    }
-
+        this.sentMessage = true;
+    } 
   } 
 
   ngOnInit(): void {

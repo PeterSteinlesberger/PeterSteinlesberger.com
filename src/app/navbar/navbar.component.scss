@@ -32,11 +32,12 @@ header {
        // transition: all 100ms linear;
         &:hover {
             color: rgb(0, 123, 255);
+            cursor: pointer;
         }
     }
 }
 
 .active {
     color: rgb(0, 123, 255);
-   // font-size: 16px;
+    font-size: 16px;
 }
