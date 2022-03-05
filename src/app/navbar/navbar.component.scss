@@ -13,23 +13,20 @@ header {
     transition: all 125ms linear;
 }
 
-
 .logo {
     height: 50px;
     width: 90px;
 }
 
-
 .menu {
     position: relative;
     width: 600px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     a {
         font-size: 14px;
         text-decoration: none;
         color: white;
-       // transition: all 100ms linear;
         &:hover {
             color: rgb(0, 123, 255);
             cursor: pointer;

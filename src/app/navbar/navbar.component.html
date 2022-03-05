@@ -2,6 +2,7 @@
 (window:scroll)="navigation.scroll()"
 (window:resize)="navigation.scroll()"
 class="header">
+<!-- Logo-Btn -->
   <a data-aos-delay="600" data-aos="fade-right" (click)="navigation.forceNavigate('home')" (mouseenter)="changeImg=true" (mouseleave)="changeImg=false"> 
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">

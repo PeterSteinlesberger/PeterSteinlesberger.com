@@ -51,14 +51,17 @@ import { filter } from 'rxjs';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
   constructor(router: Router, viewportScroller: ViewportScroller) {
     viewportScroller.setOffset([0, 0]);
+
+    /**
+     * OnScroll function
+     * 
+     */
     router.events
       .pipe(filter((e) => e instanceof Scroll))
       .subscribe((e: Scroll) => {
-        //a good solve but it still does not scroll to anchor element after second click on the same anchor
-        //one fix should be to set routing config option onSameUrlNavigation: 'reload',
         if (e.anchor) {
           // anchor navigation
           /* setTimeout is the core line to solve the solution */

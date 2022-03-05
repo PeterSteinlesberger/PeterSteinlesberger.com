@@ -39,6 +39,7 @@
     height: 400px;
     width: 500px;
 }
+
 .btn-container {
     display: flex;
     margin-top: 40px;
@@ -57,7 +58,6 @@
     font-size: 19px;
     text-decoration: none;
     transition: all 155ms ease-in-out;
-
     &:hover {
         background-color: rgba(0, 123, 255, 0.2);
         border: solid 3px rgb(0, 123, 255);

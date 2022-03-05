@@ -22,6 +22,10 @@ export class ContactSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * sendMail 
+   * 
+   */
   post = {
     endPoint: 'http://peter-steinlesberger.developerakademie.com/sendMail.php', // Ex. www.my-domain/sendMail.php
 
@@ -49,7 +53,7 @@ export class ContactSectionComponent implements OnInit {
           error: (error) => console.error(error),
           complete: () => console.info('send post complete'),
         });
-      this.sentMessage = true;
+      this.sentMessage = true; 
       this.switchInfoBox();
     }
   }

@@ -4,8 +4,8 @@ import * as Aos from 'aos';
   selector: 'app-mainsection',
   templateUrl: './mainsection.component.html',
   styleUrls: ['./mainsection.component.scss'],
-//  encapsulation: ViewEncapsulation.None
 })
+
 export class MainsectionComponent implements OnInit {
   changeImg = false;
 

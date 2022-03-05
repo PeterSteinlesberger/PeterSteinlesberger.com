@@ -3,20 +3,12 @@ import { Router } from '@angular/router';
 
 @Injectable()
 export class NavigationService {
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
 
   forceNavigate(name: string) {
-    document.getElementById(name).scrollIntoView({ 
-      behavior: 'smooth' 
+    document.getElementById(name).scrollIntoView({
+      behavior: 'smooth'
     });
-    // this.router
-    //   .navigate(['/'], { fragment: name })
-    //   .then((result) => {
-    //     console.log(result);
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   });
   }
 
   scroll() {
@@ -24,14 +16,11 @@ export class NavigationService {
     if (this.router.url !== '/imprint') {
       if (window.scrollY + window.innerHeight >= window.innerHeight) {
         navbar.style.top = '0';
-        navbar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
-        if(window.scrollY == 0) {
-          navbar.style.backgroundColor = 'transparent';
+        navbar.style.backgroundColor = 'rgba(0, 0, 0, 1)'; //if Navbar is not on top then it get a backgroundcolor
+        if (window.scrollY == 0) {
+          navbar.style.backgroundColor = 'transparent'; //if Navbar is on top then it get a transparent backgroundcolor
         }
-      } 
-      // else { 
-      //  // navbar.style.top = window.innerHeight - window.scrollY + 'px';
-      // }
+      }
     }
   }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
- import { InViewPortService } from '../in-view-port.service';
+import { InViewPortService } from '../in-view-port.service';
 import { NavigationService } from '../navigation.service';
 @Component({
   selector: 'app-navbar',
@@ -8,23 +8,23 @@ import { NavigationService } from '../navigation.service';
 })
 export class NavbarComponent implements OnInit {
   changeImg = false;
-  section : string;
+  section: string;
 
   constructor(
-    public navigation: NavigationService, 
-   public inviewport: InViewPortService
-  ) {}
+    public navigation: NavigationService,
+    public inviewport: InViewPortService
+  ) { }
 
   navOpened = false;
 
-  ngOnInit(): void {}
-  
- toggleNav(event : any) {
-      console.log(event);
-      this.navOpened = !this.navOpened;
-    }
+  ngOnInit(): void { }
 
- 
+  toggleNav(event: any) {
+    console.log(event);
+    this.navOpened = !this.navOpened;
+  }
 
-}  
- 
+
+
+}
+
