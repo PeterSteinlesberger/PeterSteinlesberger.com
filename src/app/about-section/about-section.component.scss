@@ -80,27 +80,5 @@
     margin-left: -2px;
 }
 
-.contact-btn {
-    position: relative;
-    bottom: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(255, 163, 24); 
-    text-decoration: none;
-    transition: linear 200ms ;
-    &:hover {
-        color: rgb(0, 153, 255);
-    }
-}
 
-.btn-text {
-    font-size: 20px;
-    margin-bottom: 8px;
-   
-}
 
-.arrow-img {
-    height: 60px;
-    width: 50px;
-}

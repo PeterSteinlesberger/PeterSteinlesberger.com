@@ -1,4 +1,4 @@
-  import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactSectionComponent implements OnInit {
 
-sentMessage = false;
-showDialog = false;
- contact = {
+  sentMessage = false;
+  showDialog = false;
+  contact = {
     name: '',
     email: '',
     message: '',
@@ -35,11 +35,11 @@ showDialog = false;
     },
   };
 
- 
-/**
- * Control the form-field if all entries are valid, if not a error pop up in the console
- * @param ngForm 
- */
+
+  /**
+   * Control the form-field if all entries are valid, if not a error pop up in the console
+   * @param ngForm 
+   */
   onSubmit(ngForm: any) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
@@ -49,21 +49,21 @@ showDialog = false;
           error: (error) => console.error(error),
           complete: () => console.info('send post complete'),
         });
-        this.sentMessage = true;
-        this.switchInfoBox();
-    } 
-  } 
-
-  switchInfoBox() {
-    if(this.sentMessage) {
-      setTimeout(() => {
-        console.log('function works');
-       document.getElementById('infoSent').style.display ="none";
-       this.showDialog = true;
-      }, 2400);
+      this.sentMessage = true;
+      this.switchInfoBox();
     }
   }
 
 
-  
+  /**
+   * hide and show the infoboxes
+   * 
+   */
+  switchInfoBox() {
+    setTimeout(() => {
+      document.getElementById('infoSent').style.display = "none";
+      this.showDialog = true;
+    }, 2400);
   }
+}
+
