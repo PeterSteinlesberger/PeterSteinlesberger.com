@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { InViewPortService } from '../in-view-port.service';
 import { NavigationService } from '../navigation.service';
 @Component({
@@ -8,14 +8,13 @@ import { NavigationService } from '../navigation.service';
 })
 export class NavbarComponent implements OnInit {
   changeImg = false;
-  section: string;
+  section: string = '';
+  navOpened = false;
 
   constructor(
     public navigation: NavigationService,
     public inviewport: InViewPortService
   ) { }
-
-  navOpened = false;
 
   ngOnInit(): void { }
 
@@ -24,7 +23,9 @@ export class NavbarComponent implements OnInit {
     this.navOpened = !this.navOpened;
   }
 
-
+  testFunction() {
+    console.log('section:' + this.section);
+  }
 
 }
 
