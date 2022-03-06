@@ -14,7 +14,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { NavigationService } from './navigation.service';
 import { InViewPortService } from './in-view-port.service';
 import { ViewportScroller } from '@angular/common';
@@ -35,6 +35,7 @@ import { filter } from 'rxjs';
     FooterComponent,
     ImprintComponent,
     MainpageComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -43,7 +44,9 @@ import { filter } from 'rxjs';
     MatButtonToggleModule,
     MatButtonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     NavigationService,

@@ -8,10 +8,10 @@ class="header">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
   </a>  
     <div class="menu">
-<a data-aos-delay="600" data-aos="fade-left"  (click)="navigation.forceNavigate('home'); testFunction(); [class.active]="section == 'HOME'" section ='HOME'">HOME</a>
-<a data-aos-delay="500" data-aos="fade-left"  (click)="navigation.forceNavigate('skills'); testFunction(); [class.active]="section == 'SKILLS'" section ='SKILLS'">SKILLS</a>
-<a data-aos-delay="400" data-aos="fade-left"  (click)="navigation.forceNavigate('portfolio'); testFunction(); [class.active]="section == 'PORTFOLIO'" section ='PORTFOLIO'">PORTFOLIO</a>
-<a data-aos-delay="300" data-aos="fade-left"  (click)="navigation.forceNavigate('aboutme'); testFunction(); [class.active]="section == 'ABOUT ME'" section ='ABOUT ME'">ABOUT ME</a>
-<a data-aos-delay="200" data-aos="fade-left"  (click)="navigation.forceNavigate('contact'); testFunction(); [class.active]="section == 'CONTACT'" section  ='CONTACT'">CONTACT</a>
+<a data-aos-delay="600" data-aos="fade-left" class="nav"  (click)="navigation.forceNavigate('home'); section ='HOME';" [class.active]="this.section == 'HOME'">HOME</a>
+<a data-aos-delay="500" data-aos="fade-left" class="nav"  (click)="navigation.forceNavigate('skills'); section ='SKILLS';" [class.active]="this.section == 'SKILLS'">SKILLS</a>
+<a data-aos-delay="400" data-aos="fade-left" class="nav"  (click)="navigation.forceNavigate('portfolio'); section ='PORTFOLIO';" [class.active]="this.section == 'PORTFOLIO'">PORTFOLIO</a>
+<a data-aos-delay="300" data-aos="fade-left" class="nav"  (click)="navigation.forceNavigate('aboutme'); section ='ABOUT ME';" [class.active]="this.section == 'ABOUT ME'">ABOUT ME</a>
+<a data-aos-delay="200" data-aos="fade-left" class="nav"  (click)="navigation.forceNavigate('contact'); section  ='CONTACT';" [class.active]="this.section == 'CONTACT'">CONTACT</a>
     </div>
 </header>

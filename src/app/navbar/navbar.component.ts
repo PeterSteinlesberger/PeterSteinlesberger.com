@@ -22,10 +22,5 @@ export class NavbarComponent implements OnInit {
     console.log(event);
     this.navOpened = !this.navOpened;
   }
-
-  testFunction() {
-    console.log('section:' + this.section);
-  }
-
 }
 

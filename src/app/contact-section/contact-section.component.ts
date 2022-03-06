@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-section',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-section.component.scss']
 })
 export class ContactSectionComponent implements OnInit {
-
+  
   sentMessage = false;
   showDialog = false;
   contact = {
@@ -16,6 +16,9 @@ export class ContactSectionComponent implements OnInit {
     email: '',
     message: '',
   };
+  test = new FormControl('');
+  // email = new FormControl('');
+  // message = new FormControl('');
 
   constructor(private http: HttpClient) { }
 
@@ -68,6 +71,11 @@ export class ContactSectionComponent implements OnInit {
       document.getElementById('infoSent').style.display = "none";
       this.showDialog = true;
     }, 2400);
+    setTimeout(() => {
+      this.showDialog = false;
+      this.sentMessage = false;
+      document.getElementById('contact-btn').style.display = "block";
+    }, 6400);
   }
 }
 

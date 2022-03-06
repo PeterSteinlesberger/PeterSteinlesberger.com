@@ -11,7 +11,7 @@
         <p data-aos-delay="100" data-aos="fade-left" class="text-color">Name</p>
         <input data-aos-delay="250" data-aos="fade-left" class="input-field" type="text"
           placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
-          #name="ngModel" />
+           #name="ngModel" />
       </div>
       <div>
         <p data-aos-delay="150" data-aos="fade-left" class="text-color">E-Mail</p>
@@ -26,7 +26,7 @@
           #message="ngModel"></textarea>
       </div>
       <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
-        <button *ngIf="!sentMessage" class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET
+        <button id="contact-btn" *ngIf="!sentMessage" class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET
           STARTET</button>
       </div>
     </form>
