@@ -75,7 +75,7 @@ export class ContactSectionComponent implements OnInit {
       this.showDialog = false;
       this.sentMessage = false;
       document.getElementById('contact-btn').style.display = "block";
-    }, 6400);
+    }, 8400);
   }
 }
 

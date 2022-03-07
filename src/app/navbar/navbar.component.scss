@@ -16,6 +16,9 @@ header {
 .logo {
     height: 50px;
     width: 90px;
+   &:hover {
+        cursor: pointer;
+    }
 }
 
 .menu {
