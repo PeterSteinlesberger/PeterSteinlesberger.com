@@ -46,7 +46,9 @@
     height: 40px;
     width: 100%;
     margin-top: 10px;
-    border: solid 1px transparent;
+    border-width: 2px;
+    border-style: inset;
+    border-image: initial;
     &:focus {
         box-shadow: none;
         outline: none;
@@ -169,23 +171,24 @@ textarea {
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 20px;
-    background-color: black;
-    color: rgb(218, 11, 11);
-    border: solid 1px rgb(218, 11, 11);;
+    background-color: blackrgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
     font-size: 16px;
     box-sizing: border-box;
+    animation: animateAlertBox 1100ms ease-out 1 both;
 }
 
-@keyframes animateToBlue {
+@keyframes animateAlertBox {
     from {
-        opacity: 0.8;
+        opacity: 0.6;
         transform: skew(67deg);
     }
     to {
         opacity: 1;
         transform: skew(180deg);
-        background-color: rgba(0, 123, 255, 0.2);
-        color: rgb(0, 153, 255);
-        border: solid 2px rgb(0, 123, 255);
+        background-color: black;
+        color: rgb(218, 11, 11);
+        border: solid 1px rgb(218, 11, 11);
     }
 }
