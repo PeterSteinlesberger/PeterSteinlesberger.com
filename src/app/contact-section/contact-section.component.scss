@@ -12,19 +12,24 @@
 }
 
 .contact-text-container {
-    height: 110px;
-    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 413px;
+    width: 444px;
     line-height: 26px;
 }
 
 .font-size {
     font-size: 54px;
     color: rgb(0, 123, 255);
+    margin-bottom: 60px;
+    margin-top: 69px;
 }
 
 .contact-form-container {
     height: 500px;
-    width: 626px;
+    width: 600px;
 }
 
 .text-color {
@@ -80,8 +85,7 @@ textarea {
     border: solid 2px rgb(255, 153, 0);
     color: rgb(255, 163, 24);
     background-color: rgba(255, 153, 0, 0.1);
-    transition: all 325ms ease-in-out;
-    //  animation: animateToOrange 1100ms ease-out 1 both;
+    transition: all 85ms ease-in-out;
     &:hover {
         cursor: pointer;
         background-color: rgba(0, 123, 255, 0.2);
@@ -157,4 +161,31 @@ textarea {
     height: 17px;
     margin-left: 6px;
     margin-bottom: 2px;
+}
+
+.error-messages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: black;
+    color: rgb(218, 11, 11);
+    border: solid 1px rgb(218, 11, 11);;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@keyframes animateToBlue {
+    from {
+        opacity: 0.8;
+        transform: skew(67deg);
+    }
+    to {
+        opacity: 1;
+        transform: skew(180deg);
+        background-color: rgba(0, 123, 255, 0.2);
+        color: rgb(0, 153, 255);
+        border: solid 2px rgb(0, 123, 255);
+    }
 }
