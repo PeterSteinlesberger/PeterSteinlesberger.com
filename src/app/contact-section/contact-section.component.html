@@ -8,25 +8,29 @@
   <div class="contact-form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
-        <p data-aos-delay="100" data-aos="fade-left" class="text-color">Name</p>
+        <div class="input-headline">
+          <p data-aos-delay="100" data-aos="fade-left" class="text-color">Name</p>
+          <img src="assets/img/Icons/mark_accept.png">
+        </div>
         <input data-aos-delay="250" data-aos="fade-left" class="input-field" type="text"
-          placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name" minlength="4"
-           #name="ngModel"/>
+          placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
+          minlength="4" #name="ngModel" />
       </div>
       <div>
         <p data-aos-delay="150" data-aos="fade-left" class="text-color">E-Mail</p>
         <input data-aos-delay="300" data-aos="fade-left" class="input-field" type="email"
-          placeholder="Your Email address..." [(ngModel)]="contact.email" name="email" email required  minlength="4"
-          #email="ngModel"/>
+          placeholder="Your Email address..." [(ngModel)]="contact.email" name="email" email required minlength="4"
+          #email="ngModel" />
       </div>
       <div>
         <p data-aos-delay="200" data-aos="fade-left" class="text-color">Message</p>
         <textarea data-aos-delay="350" data-aos="fade-left" class="input-field textarea" rows="10"
-          placeholder="Your message..." required [(ngModel)]="contact.message" name="message"
-          #message="ngModel" minlength="14"></textarea>
+          placeholder="Your message..." required [(ngModel)]="contact.message" name="message" #message="ngModel"
+          minlength="14"></textarea>
       </div>
       <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
-        <button id="contact-btn" *ngIf="!sentMessage" class="contact-button" type="submit" [disabled]="!contactForm.form.valid">LET'S GET
+        <button id="contact-btn" *ngIf="!sentMessage" class="contact-button" type="submit"
+          [disabled]="!contactForm.form.valid">LET'S GET
           STARTET</button>
       </div>
     </form>
@@ -35,24 +39,23 @@
       <p>MESSAGE SENT</p>
     </div>
     <!-- Infobox - Thank you -->
-    <div *ngIf="showDialog" class="info-message"> 
+    <div *ngIf="showDialog" class="info-message">
       <p>Thank you for your interest. I will reply soon...</p>
     </div>
-<!-- Error-message - input-form not validated -->
-<div *ngIf="name.errors?.['required']">
-  Name is required.
-</div>
-<div *ngIf="name.errors?.['minlength']">
-  Name must be at least 4 characters long.
-</div>
-<div *ngIf="email.errors?.['minlength']">
- Emial eingeben
-</div>
-<div *ngIf="message.errors?.['minlength']">
-  Bitte Text eingeben.
- </div>
- <div *ngIf="email.invalid"
-    class="alert">
-    Gültige email eingeben
+    <!-- Error-message - input-form not validated -->
+    <div *ngIf="name.errors?.['required']">
+      Name is required.
+    </div>
+    <div *ngIf="name.errors?.['minlength']">
+      Name must be at least 4 characters long.
+    </div>
+    <div *ngIf="email.errors?.['minlength']">
+      Emial eingeben
+    </div>
+    <div *ngIf="message.errors?.['minlength']">
+      Bitte Text eingeben.
+    </div>
+    <div *ngIf="email.invalid" class="alert">
+      Gültige email eingeben
+    </div>
   </div>
-</div>
