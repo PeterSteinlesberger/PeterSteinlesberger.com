@@ -22,7 +22,7 @@
 
 .font-size {
     font-size: 54px;
-    color: rgb(0, 123, 255);
+    color: rgb(0, 110, 255);
     margin-bottom: 60px;
     margin-top: 69px;
 }
@@ -52,7 +52,7 @@
     &:focus {
         box-shadow: none;
         outline: none;
-        border: solid 1px rgb(0, 123, 255);
+        border: solid 1px rgb(0, 110, 255);
     }
 }
 
@@ -90,9 +90,9 @@ textarea {
     transition: all 85ms ease-in-out;
     &:hover {
         cursor: pointer;
-        background-color: rgba(0, 123, 255, 0.2);
-        color: rgb(0, 153, 255);
-        border: solid 2px rgb(0, 123, 255);
+        background-color: rgba(0, 110, 255, 0.2);
+        color: rgb(0, 110, 255);
+        border: solid 2px rgb(0, 110, 255);
     }
 }
 
@@ -105,9 +105,9 @@ textarea {
     width: 100%;
     margin-top: 40px;
     font-size: 20px;
-    background-color: rgba(0, 123, 255, 0.2);
-    color: rgb(0, 153, 255);
-    border: solid 2px rgb(0, 123, 255);
+    background-color: rgba(0, 110, 255, 0.2);
+    color: rgb(0, 110, 255);
+    border: solid 2px rgb(0, 110, 255);
     animation: animateToOrange 1100ms ease-out 1 both;
 }
 
@@ -148,9 +148,9 @@ textarea {
     to {
         opacity: 1;
         transform: skew(180deg);
-        background-color: rgba(0, 123, 255, 0.2);
-        color: rgb(0, 153, 255);
-        border: solid 2px rgb(0, 123, 255);
+        background-color: rgba(0, 110, 255, 0.2);
+        color: rgb(0, 110, 255);
+        border: solid 2px rgb(0, 110, 255);
     }
 }
 
@@ -172,11 +172,11 @@ textarea {
     justify-content: space-evenly;
     padding: 20px;
     background-color: blackrgba(0, 0, 0, 0.25);
-    color: rgb(255, 255, 255);
-    border: solid 1px rgb(255, 255, 255);
+    color: rgb(255, 163, 24);
+    border: solid 1px rgb(255, 163, 24);
     font-size: 16px;
     box-sizing: border-box;
-    animation: animateAlertBox 1100ms ease-out 1 both;
+    animation: animateAlertBox 900ms ease-out 1 both;
 }
 
 @keyframes animateAlertBox {

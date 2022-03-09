@@ -6,7 +6,7 @@
       work with me.</p>
 </div>
     <!-- Error-message - input-form not validated -->
-    <div class="error-messages-container">
+    <div [ngStyle]="{'display':!contactForm.form.valid ?  'flex' : 'none' }" class="error-messages-container">
       <div *ngIf="name.errors?.['required']">
         A name is required.
       </div>
@@ -32,7 +32,7 @@
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
         <div class="input-headline">
-          <p data-aos-delay="100" data-aos="fade-left" class="text-color">Name</p>
+          <p data-aos-delay="100" data-aos="fade-left" class="text-color" [ngStyle]="{'color':!name.errors?.['minlength'] && !name.errors?.['required'] ? 'rgb(0, 110, 255)' : 'rgb(255, 163, 24)'}">Name</p>
           <img *ngIf="!name.errors?.['minlength'] && !name.errors?.['required']" class="mark-icon"
             src="assets/img/Icons/mark_accept.png">
         </div>
@@ -42,7 +42,7 @@
       </div>
       <div>
         <div class="input-headline">
-          <p data-aos-delay="150" data-aos="fade-left" class="text-color">E-Mail</p>
+          <p data-aos-delay="150" data-aos="fade-left" class="text-color" [ngStyle]="{'color':!email.errors?.['minlength'] && !email.errors?.['required'] ? 'rgb(0, 110, 255)' : 'rgb(255, 163, 24)'}">E-Mail</p>
           <img *ngIf="!email.errors?.['minlength'] && !email.invalid" class="mark-icon"
             src="assets/img/Icons/mark_accept.png">
         </div>
@@ -52,7 +52,7 @@
       </div>
       <div>
         <div class="input-headline">
-          <p data-aos-delay="200" data-aos="fade-left" class="text-color">Message</p>
+          <p data-aos-delay="200" data-aos="fade-left" class="text-color" [ngStyle]="{'color':!message.errors?.['minlength'] && !message.errors?.['required'] ? 'rgb(0, 110, 255)' : 'rgb(255, 163, 24)'}">Message</p>
           <img *ngIf="!message.errors?.['minlength'] && !message.invalid" class="mark-icon"
             src="assets/img/Icons/mark_accept.png">
         </div>
