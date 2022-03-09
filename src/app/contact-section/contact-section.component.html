@@ -10,23 +10,29 @@
       <div>
         <div class="input-headline">
           <p data-aos-delay="100" data-aos="fade-left" class="text-color">Name</p>
-          <img src="assets/img/Icons/mark_accept.png">
+          <img *ngIf="!name.errors?.['minlength'] && !name.errors?.['required']" class="mark-icon" src="assets/img/Icons/mark_accept.png">
         </div>
         <input data-aos-delay="250" data-aos="fade-left" class="input-field" type="text"
           placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
           minlength="4" #name="ngModel" />
       </div>
       <div>
+        <div class="input-headline">
         <p data-aos-delay="150" data-aos="fade-left" class="text-color">E-Mail</p>
+        <img *ngIf="!email.errors?.['minlength'] && !email.invalid" class="mark-icon" src="assets/img/Icons/mark_accept.png">
+      </div>
         <input data-aos-delay="300" data-aos="fade-left" class="input-field" type="email"
-          placeholder="Your Email address..." [(ngModel)]="contact.email" name="email" email required minlength="4"
-          #email="ngModel" />
+          placeholder="Your Email address..." [(ngModel)]="contact.email" name="email" email required minlength="8"
+          #email="ngModel"/>
       </div>
       <div>
+        <div class="input-headline">
         <p data-aos-delay="200" data-aos="fade-left" class="text-color">Message</p>
+        <img *ngIf="!message.errors?.['minlength'] && !message.invalid" class="mark-icon" src="assets/img/Icons/mark_accept.png">
+      </div>
         <textarea data-aos-delay="350" data-aos="fade-left" class="input-field textarea" rows="10"
-          placeholder="Your message..." required [(ngModel)]="contact.message" name="message" #message="ngModel"
-          minlength="14"></textarea>
+          placeholder="Your message..." [(ngModel)]="contact.message"  name="message" required minlength="20" #message="ngModel"
+         ></textarea>
       </div>
       <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
         <button id="contact-btn" *ngIf="!sentMessage" class="contact-button" type="submit"

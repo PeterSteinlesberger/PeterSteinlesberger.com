@@ -147,3 +147,14 @@ textarea {
         border: solid 2px rgb(0, 123, 255);
     }
 }
+
+.input-headline {
+    display: flex;
+    align-items: flex-end;
+}
+
+.mark-icon {
+    height: 17px;
+    margin-left: 6px;
+    margin-bottom: 2px;
+}
