@@ -49,12 +49,30 @@
     border-width: 2px;
     border-style: inset;
     border-image: initial;
+    
     &:focus {
         box-shadow: none;
         outline: none;
         border: solid 1px rgb(0, 110, 255);
     }
+   
 }
+
+ // change scrollbar attributes //
+    textarea::-webkit-scrollbar{
+        width:14px;
+        border-left:1px solid rgba(0, 110, 255, 0.45);
+        &:hover {
+            cursor: pointer !important;
+        }
+    }
+    textarea::-webkit-scrollbar-thumb{
+        background-color:rgba(0, 110, 255, 0.35);
+        border:1px solid rgba(0, 110, 255, 1);
+        box-sizing: border-box;
+      
+    }
+
 
 input::-webkit-input-placeholder {
     font-size: 14px;
