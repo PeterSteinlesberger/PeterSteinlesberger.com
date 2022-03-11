@@ -53,7 +53,7 @@ export class ContactSectionComponent implements OnInit, AfterViewInit {
    * @param ngForm 
    */
   onSubmit(ngForm: any) {
-    this.showErrorDialog = true; 
+    this.showErrorDialog = false;
     if (ngForm.submitted && ngForm.form.valid) {
       console.log(ngForm);
       this.http
@@ -66,8 +66,6 @@ export class ContactSectionComponent implements OnInit, AfterViewInit {
       this.sentMessage = true; 
       this.switchInfoBox();  
       this.contactForm.reset();
-    } else {
-       this.showErrorDialog = true; 
     }
   }
 
@@ -86,10 +84,16 @@ export class ContactSectionComponent implements OnInit, AfterViewInit {
       this.sentMessage = false;
     }, 8400);
   }
-}
+
 
 /*
- *This function clear the Formfield 
+ *This function show the error-dialog
  * 
  */
+showErrorMessage() {
+  console.log('nice1');
+this.showErrorDialog = true;
+console.log('showErrorDialog: ', this.showErrorDialog);
+}
 
+}
