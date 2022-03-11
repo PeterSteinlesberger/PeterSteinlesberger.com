@@ -90,11 +90,15 @@
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1500px) {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px ) {
+
+}
+
+@media only screen and (min-width: 1024px ) {
 
 }
 
@@ -106,7 +110,6 @@
 
 }
 
-@media only screen and (max-width: 320px ) {
+@media only screen and (min-width: 320px ) {
 
 }
- 
