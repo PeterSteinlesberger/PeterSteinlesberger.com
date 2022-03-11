@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormControl, NgForm } from '@angular/forms';
 
 @Component({
@@ -66,6 +66,8 @@ export class ContactSectionComponent implements OnInit, AfterViewInit {
       this.sentMessage = true; 
       this.switchInfoBox();  
       this.contactForm.reset();
+    } else {
+      this.showErrorDialog = true;  // This show the error-dialog
     }
   }
 
@@ -84,16 +86,4 @@ export class ContactSectionComponent implements OnInit, AfterViewInit {
       this.sentMessage = false;
     }, 8400);
   }
-
-
-/*
- *This function show the error-dialog
- * 
- */
-showErrorMessage() {
-  console.log('nice1');
-this.showErrorDialog = true;
-console.log('showErrorDialog: ', this.showErrorDialog);
-}
-
 }
