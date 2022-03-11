@@ -1,26 +1,31 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { FormControl, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-section',
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.scss']
 })
-export class ContactSectionComponent implements OnInit {
+export class ContactSectionComponent implements OnInit, AfterViewInit {
+
+
+  @ViewChild('contactForm') contactForm : NgForm;
   
   sentMessage = false;
   showDialog = false;
+  showErrorDialog = false;
   contact = {
     name: '',
     email: '',
     message: '',
   };
-  test = new FormControl('');
-  // email = new FormControl('');
-  // message = new FormControl('');
 
   constructor(private http: HttpClient) { }
+  ngAfterViewInit(): void {
+    console.log(this.contactForm);
+    
+  }
 
   ngOnInit(): void {
   }
@@ -48,7 +53,9 @@ export class ContactSectionComponent implements OnInit {
    * @param ngForm 
    */
   onSubmit(ngForm: any) {
+    this.showErrorDialog = true; 
     if (ngForm.submitted && ngForm.form.valid) {
+      console.log(ngForm);
       this.http
         .post(this.post.endPoint, this.post.body(this.contact))
         .subscribe({
@@ -57,7 +64,10 @@ export class ContactSectionComponent implements OnInit {
           complete: () => console.info('send post complete'),
         });
       this.sentMessage = true; 
-      this.switchInfoBox();
+      this.switchInfoBox();  
+      this.contactForm.reset();
+    } else {
+       this.showErrorDialog = true; 
     }
   }
 
@@ -70,12 +80,16 @@ export class ContactSectionComponent implements OnInit {
     setTimeout(() => {
       document.getElementById('infoSent').style.display = "none";
       this.showDialog = true;
-    }, 2400);
-    setTimeout(() => {
+    }, 2600);
+    setTimeout(() => { 
       this.showDialog = false;
       this.sentMessage = false;
-      document.getElementById('contact-btn').style.display = "block";
     }, 8400);
   }
 }
+
+/*
+ *This function clear the Formfield 
+ * 
+ */
 

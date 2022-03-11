@@ -24,7 +24,7 @@
     font-size: 54px;
     color: rgb(0, 110, 255);
     margin-bottom: 60px;
-    margin-top: 69px;
+    margin-top: 16px;
 }
 
 .contact-form-container {
@@ -62,15 +62,11 @@
     textarea::-webkit-scrollbar{
         width:14px;
         border-left:1px solid rgba(0, 110, 255, 0.45);
-        &:hover {
-            cursor: pointer !important;
-        }
     }
     textarea::-webkit-scrollbar-thumb{
         background-color:rgba(0, 110, 255, 0.35);
         border:1px solid rgba(0, 110, 255, 1);
         box-sizing: border-box;
-      
     }
 
 
@@ -178,9 +174,9 @@ textarea {
 }
 
 .mark-icon {
-    height: 17px;
+    height: 14px;
     margin-left: 6px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 .error-messages-container {

@@ -6,16 +6,16 @@
       work with me.</p>
 </div>
     <!-- Error-message - input-form not validated -->
-    <div [ngStyle]="{'display':!contactForm.form.valid ?  'flex' : 'none' }" class="error-messages-container">
+    <div *ngIf="!showErrorDialog" [ngStyle]="{'display':!contactForm.form.valid ?  'flex' : 'none' }" class="error-messages-container">
       <div *ngIf="name.errors?.['required']">
         A name is required.
       </div>
       <div *ngIf="name.errors?.['minlength']">
         The name must have at least three characters.
-      </div>
-      <div *ngIf="email.errors?.['minlength']">
-        The email address must have at least eight characters.
-      </div>
+      </div> 
+      <!-- <div *ngIf="email.errors?.['minlength']">
+        The email address must have at least eight characters. 
+      </div>-->
       <div *ngIf="email.invalid">
         Please enter a valid email address.
       </div>
@@ -42,7 +42,7 @@
       </div>
       <div>
         <div class="input-headline">
-          <p data-aos-delay="150" data-aos="fade-left" class="text-color" [ngStyle]="{'color':!email.errors?.['minlength'] && !email.errors?.['required'] ? 'rgb(0, 110, 255)' : 'rgb(255, 163, 24)'}">E-Mail</p>
+          <p data-aos-delay="150" data-aos="fade-left" class="text-color" [ngStyle]="{'color':!email.errors?.['minlength'] && !email.invalid ? 'rgb(0, 110, 255)' : 'rgb(255, 163, 24)'}">E-Mail</p>
           <img *ngIf="!email.errors?.['minlength'] && !email.invalid" class="mark-icon"
             src="assets/img/Icons/mark_accept.png">
         </div>
