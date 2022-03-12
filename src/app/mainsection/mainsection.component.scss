@@ -57,13 +57,11 @@ span {
     bottom: -23px;
 }
 
-.contact--container {
+.contact-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
-
 
 /*
 *Meaning of the "only" and "and" keywords:
@@ -74,47 +72,109 @@ span {
 */
 
 @media only screen and (max-width: 1500px) {
-  
 }
 
 @media only screen and (max-width: 1400px) {
     .h1 {
         font-size: 58px;
-      }
+    }
 }
 
-
-@media only screen and (max-width: 1200px ) {
+@media only screen and (max-width: 1200px) {
     .h1 {
         font-size: 52px;
-      }
+    }
 
-      .profile-img {
+    .profile-img {
         object-fit: contain;
     }
 }
 
-@media only screen and (max-width: 1024px ) {
+@media only screen and (max-width: 1024px) {
     .h1 {
         font-size: 40px;
-      }
-}
+    }
 
-@media only screen and (max-width: 768px ) {
-    .h1 {
-        font-size: 28px;
-      }
-}
-
-@media only screen and (max-width: 480px ) {
-    .h1 {
-        font-size: 22px;
-      }
-      .profile-img {
-        width: 100%;
+    .contact-container {
+        margin-left: -130px;
+        margin-top: 192px;
     }
 }
 
-@media only screen and (min-width: 320px ) {
-   
+@media only screen and (max-width: 768px) {
+    .h1 {
+        font-size: 26px;
+        top: 374px;
+        margin-left: 17px;
+    }
+
+    .profile-img {
+        position: absolute;
+        top: 130px;
+        height: 500px;
+        width: 80%;
+        object-fit: cover;
+        object-position: 0% 70%;
+    }
+
+    .contact-container {
+        width: 140px;
+        margin-left: -130px;
+        margin-top: 258px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .h1 {
+        left: 58px;
+    font-size: 32px;
+        top: 338px;
+    }
+
+    .profile-img {
+        object-fit: contain;
+        width: 100%;
+        margin-top: -40px;
+    }
+
+    .contact-container {
+  margin-left: 0px;
+    margin-top: 432px;
+    background-color: rgba(67, 67, 68, 0);
+    }
+
+    .opacity-container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .h1 {
+        left: 30px;
+    font-size: 26px;
+        top: 338px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .h1 {
+        left: 24px;
+    font-size: 23px;
+        top: 212px;
+    }
+
+    .profile-img {
+        object-fit: contain;
+        width: 100%;
+        margin-top: -140px;
+    }
+
+}
+
+@media only screen and (min-width: 320px) {
+    .contact-container {
+        margin-left: 0px;
+        margin-top: 356px;
+          }
 }
