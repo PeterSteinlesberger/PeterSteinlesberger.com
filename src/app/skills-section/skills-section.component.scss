@@ -1,5 +1,4 @@
 .skills-container {
-    height: 100vh;
     padding-top: 90px;
     background-color: black;
     display: flex;
@@ -67,7 +66,12 @@
 */
 
 @media only screen and (max-width: 1500px) {
-  
+    .overview-container {
+        width: 1000px;
+        height: 680px;
+      padding-bottom: 60px;
+    }
+    
 }
 
 @media only screen and (max-width: 1200px ) {
@@ -75,7 +79,19 @@
 }
 
 @media only screen and (max-width: 1024px ) {
+    .overview-container {
+        width: 800px;  
+        height: 912px;
+        padding-bottom: 60px;   
+    }
+}
 
+@media only screen and (max-width: 660px ) {
+    .overview-container {
+        width: 500px;
+        height: 1760px;
+     
+    }
 }
 
 @media only screen and (max-width: 768px ) {
@@ -83,7 +99,9 @@
 }
 
 @media only screen and (max-width: 480px ) {
-
+    .skill-container {
+        font-size: 28px;
+    }
 }
 
 @media only screen and (min-width: 320px ) {
