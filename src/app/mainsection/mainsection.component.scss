@@ -63,6 +63,10 @@ span {
     justify-content: center;
 }
 
+.contact-btn {
+    bottom: 264px;
+}
+
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -72,11 +76,17 @@ span {
 */
 
 @media only screen and (max-width: 1500px) {
+    .contact-btn {
+        bottom: 244px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
     .h1 {
         font-size: 58px;
+    }
+    .contact-btn {
+        bottom: 204px;
     }
 }
 
@@ -92,12 +102,16 @@ span {
 
 @media only screen and (max-width: 1024px) {
     .h1 {
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .contact-container {
         margin-left: -130px;
         margin-top: 192px;
+    }
+
+    .contact-btn {
+        bottom: 172px;
     }
 }
 
@@ -117,18 +131,31 @@ span {
         object-position: 0% 70%;
     }
 
-    .contact-container {
-        width: 140px;
-        margin-left: -130px;
-        margin-top: 258px;
+    .contact-btn {
+        margin-left: -618px;
+        margin-top: 88px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .contact-btn {
+        margin-left: -546px;
+        margin-top: 88px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .contact-btn {
+        margin-left: -480px;
+        margin-top: 88px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .h1 {
         left: 58px;
-    font-size: 32px;
-        top: 338px;
+        font-size: 32px;
+        top: 324px;
     }
 
     .profile-img {
@@ -138,29 +165,33 @@ span {
     }
 
     .contact-container {
-  margin-left: 0px;
-    margin-top: 432px;
-    background-color: rgba(67, 67, 68, 0);
+        margin-left: 0px;
+        margin-top: 236px;
     }
 
     .opacity-container {
         width: 100vw;
         height: 100vh;
     }
+
+    .contact-btn {
+        margin-left: 0;
+        margin-top: 148px;
+    }
 }
 
 @media only screen and (max-width: 440px) {
     .h1 {
         left: 30px;
-    font-size: 26px;
-        top: 338px;
+        font-size: 26px;
+        top: 310px;
     }
 }
 
 @media only screen and (max-width: 360px) {
     .h1 {
         left: 24px;
-    font-size: 23px;
+        font-size: 23px;
         top: 212px;
     }
 
@@ -170,11 +201,15 @@ span {
         margin-top: -140px;
     }
 
+    .contact-btn {
+        margin-left: 0;
+        margin-top: 60px;
+    }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 319px) {
     .contact-container {
         margin-left: 0px;
         margin-top: 356px;
-          }
+    }
 }
