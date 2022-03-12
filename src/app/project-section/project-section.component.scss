@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    height: 348px;
     width: 100%;
     padding-left: 300px;
     padding-right: 300px;
@@ -36,13 +36,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     height: 400px;
-    width: 500px;
+    width: 375px;
 }
 
 .btn-container {
     display: flex;
-    margin-top: 40px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .project-btn {
@@ -65,6 +68,9 @@
     }
 }
 
+// .mBottom8 {
+//     margin-bottom: 8px;
+// }
 
 /*
 *Meaning of the "only" and "and" keywords:
@@ -73,13 +79,45 @@
 *and: The and keyword combines a media feature with a media type or other media features.
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
+@media only screen and (max-width: 1860px ) {
+    .content-container {
+        padding-top: 54px;
+        padding-bottom: 54px;
+        height: 300px;
+    }
+
+    .project-img {
+        height: 300px;
+        width: 475px;
+    }
+
+}
 
 @media only screen and (max-width: 1500px) {
-  
+    .project-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .content-container {
+        height: 300px;
+        width: 375px;
+    }
+
+    .project-img {
+        height: 300px;
+        width: 475px;
+    }
+
+   
 }
 
 @media only screen and (max-width: 1200px ) {
- 
+    .project-container {
+        height: 500px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
 }
 
 @media only screen and (max-width: 1024px ) {
