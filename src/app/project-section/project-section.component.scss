@@ -24,12 +24,11 @@
     margin-bottom: 50px;
     box-sizing: border-box;
     line-height: 24px;
-    background-color: rgba(67, 67, 68, 0.1);
+    background-color: rgba(67, 67, 68, 0.3);
 }
 
 .project-container-flexreverse {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 348px;
@@ -39,7 +38,7 @@
     margin-bottom: 50px;
     box-sizing: border-box;
     line-height: 24px;
-    background-color: rgba(67, 67, 68, 0.1);  
+    background-color: rgba(67, 67, 68, 0.3);
 }
 
 .project-img {
@@ -83,12 +82,8 @@
     }
 }
 
-.column-reverse {
-    display: none;
-    flex-direction: column-reverse;
-    h3 {
-        margin-top: unset;
-    }
+h3 {
+    margin: 0;
 }
 
 /*
@@ -116,6 +111,12 @@
         padding-left: 180px;
         padding-right: 180px;
     }
+    
+    .project-container-flexreverse {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    
 
     .content-container {
         height: 300px;
@@ -131,24 +132,22 @@
 @media only screen and (max-width: 1260px) {
     .project-container {
         height: unset;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding: 24px 140px 24px 140px;
+    }
+
+    .project-container-flexreverse {
+        height: unset;
         padding: 24px 140px 24px 140px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .project-container {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        align-items: center;
-        padding: 24px 140px 24px 140px;
-        margin-bottom: 40px;
-        width: 100%;
-        box-sizing: border-box;
-        line-height: 24px;
+    }
+
+    .project-container-flexreverse {
+        flex-direction: column-reverse;
     }
 
     .content-container {
@@ -156,7 +155,6 @@
         padding-bottom: unset;
         height: 300px;
     }
-
 }
 
 @media only screen and (max-width: 1024px) {
