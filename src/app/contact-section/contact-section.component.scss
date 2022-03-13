@@ -49,26 +49,24 @@
     border-width: 2px;
     border-style: inset;
     border-image: initial;
-    
+
     &:focus {
         box-shadow: none;
         outline: none;
         border: solid 1px rgb(0, 110, 255);
     }
-   
 }
 
- // change scrollbar attributes //
-    textarea::-webkit-scrollbar{
-        width:14px;
-        border-left:1px solid rgba(0, 110, 255, 0.45);
-    }
-    textarea::-webkit-scrollbar-thumb{
-        background-color:rgba(0, 110, 255, 0.35);
-        border:1px solid rgba(0, 110, 255, 1);
-        box-sizing: border-box;
-    }
-
+// change scrollbar attributes //
+textarea::-webkit-scrollbar {
+    width: 14px;
+    border-left: 1px solid rgba(0, 110, 255, 0.45);
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 110, 255, 0.35);
+    border: 1px solid rgba(0, 110, 255, 1);
+    box-sizing: border-box;
+}
 
 input::-webkit-input-placeholder {
     font-size: 14px;
@@ -125,20 +123,6 @@ textarea {
     animation: animateToWhite 1100ms ease-out 1 both;
 }
 
-@keyframes animateToWhite {
-    from {
-        opacity: 0.8;
-        transform: skew(67deg);
-    }
-    to {
-        opacity: 1;
-        transform: skew(180deg);
-        border: solid 2px rgb(255, 255, 255);
-        color: rgb(255, 255, 255);
-        background-color: rgba(255, 255, 255, 0.20);
-    }
-}
-
 .info-message {
     position: relative;
     display: flex;
@@ -152,20 +136,6 @@ textarea {
     color: rgb(255, 163, 24);
     background-color: rgba(255, 153, 0, 0.1);
     animation: animateToBlue 1100ms ease-out 1 both;
-}
-
-@keyframes animateToBlue {
-    from {
-        opacity: 0.8;
-        transform: skew(67deg);
-    }
-    to {
-        opacity: 1;
-        transform: skew(180deg);
-        background-color: rgba(0, 110, 255, 0.2);
-        color: rgb(0, 110, 255);
-        border: solid 2px rgb(0, 110, 255);
-    }
 }
 
 .input-headline {
@@ -193,6 +163,21 @@ textarea {
     animation: animateAlertBox 900ms ease-out 1 both;
 }
 
+.contact-btn {
+    position: relative;
+    bottom: 160px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 163, 24);
+    text-decoration: none;
+    transition: linear 125ms;
+    &:hover {
+        color: rgb(0, 153, 255);
+    }
+}
+
 @keyframes animateAlertBox {
     from {
         opacity: 0.6;
@@ -206,22 +191,34 @@ textarea {
         border: solid 1px rgb(218, 11, 11);
     }
 }
-  
-  .contact-btn {
-    position: relative;
-    bottom: 160px;
-    width: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(255, 163, 24);
-    text-decoration: none;
-    transition: linear 125ms;
-    &:hover {
-      color: rgb(0, 153, 255);
+
+@keyframes animateToBlue {
+    from {
+        opacity: 0.8;
+        transform: skew(67deg);
     }
-  }
-  
+    to {
+        opacity: 1;
+        transform: skew(180deg);
+        background-color: rgba(0, 110, 255, 0.2);
+        color: rgb(0, 110, 255);
+        border: solid 2px rgb(0, 110, 255);
+    }
+}
+
+@keyframes animateToWhite {
+    from {
+        opacity: 0.8;
+        transform: skew(67deg);
+    }
+    to {
+        opacity: 1;
+        transform: skew(180deg);
+        border: solid 2px rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
 
 /*
 *Meaning of the "only" and "and" keywords:
@@ -232,25 +229,87 @@ textarea {
 */
 
 @media only screen and (max-width: 1500px) {
-  
+    .contact-section {
+        height: 84vh;
+        width: 100%;
+        padding-top: 84px;
+        padding-left: 180px;
+        padding-right: 180px;
+        background-color: #212122;
+        font-size: 19px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-form-container {
+        width: 500px;
+    }
 }
 
-@media only screen and (max-width: 1200px ) {
- 
+@media only screen and (max-width: 1400px) {
+    .contact-form-container {
+        width: 444px;
+    }
 }
 
-@media only screen and (max-width: 1024px ) {
+@media only screen and (max-width: 1300px) {
+    .contact-form-container {
+        width: 400px;
+    }
 
+    .contact-text-container {
+        width: 400px;
+    }
 }
 
-@media only screen and (max-width: 768px ) {
+@media only screen and (max-width: 1200px) {
+    .contact-section {
+        padding: 84px 140px 0 140px;
+    }
+    
+    .contact-form-container {
+        width: 360px;
+    }
 
+    .contact-text-container {
+        width: 360px;
+    }
 }
 
-@media only screen and (max-width: 480px ) {
+@media only screen and (max-width: 1024px) {
+    .contact-section {
+        padding: 84px 140px 0 140px;
+        display: block;
+        height: 800px;
+    }
 
+    .contact-form-container {
+        width: unset;
+        p {
+            margin-top: 14px;
+        }
+    }
+
+    .contact-text-container {
+        width: unset;
+        height: 136px;
+        margin-top: 70px;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact-button {
+margin-top: 28px;
+    }
 }
 
-@media only screen and (min-width: 320px ) {
+@media only screen and (max-width: 768px) {
+}
 
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (min-width: 320px) {
 }
