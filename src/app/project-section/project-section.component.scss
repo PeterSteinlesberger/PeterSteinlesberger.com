@@ -1,7 +1,7 @@
 .project-section {
     background-color: rgb(33, 33, 34);
     width: 100%;
-    padding-top: 126px;
+    padding-top: 90px;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
@@ -10,8 +10,8 @@
 }
 
 .headline {
-    margin-top: 60px;
-    
+    margin-top: 52px;
+    margin-bottom: 0;
 }
 
 .project-container {
@@ -54,8 +54,7 @@
     justify-content: space-between;
     height: 300px;
     width: 375px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0px !important;
 }
 
 .btn-container {
@@ -157,8 +156,7 @@
     }
 
     .headline {
-        margin-bottom: 0px;
-            margin-top: 0px;
+        margin-top: 36px;
     }
 }
 
@@ -168,7 +166,7 @@
 @media only screen and (max-width: 768px) {
     .content-container {
         height: 240px;
-        width: 300px;
+        width: 380px;
     }
 
     .project-img {
@@ -184,25 +182,36 @@
 
     .headline {
         font-size: 32px;
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    .content-container {
-        height: 240px;
-        width: 240px;
-    }
-
-    .project-img {
-        height: 192px;
-        width: 304px;
+        margin-bottom: 24px;
     }
 
     .btn-container {
         display: flex;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .content-container {
+        height: unset;
+        width: 240px;
+    }
+
+    .project-img {
+        height: 192px;
+        width: 280px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+        margin-top: 24px;
+        padding: 0;
+        a {
+            margin: 0;
+        }
     }
 
     .project-btn {
@@ -217,20 +226,21 @@
     }
 
     .project-container {
-     width: 320px;
+        width: 320px;
         padding: 16px;
+        height: unset;
+        justify-content: flex-start;
     }
 
     .project-container-flexreverse {
         width: 320px;
+        padding: 16px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .content-container {
-        padding: 12px;
-        padding-bottom: 32px;
-        height: 220px;
+        height: unset;
         width: 236px;
     }
 
@@ -241,6 +251,8 @@
 
     .headline {
         font-size: 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .project-btn {
@@ -252,15 +264,18 @@
 
     .project-container {
         width: 268px;
-        height: 450px;
-           padding: 16px;
-       }
-   
-       .project-container-flexreverse {
-           width: 268px;
-           height: 450px;
-       }
-    
+        padding: 16px;
+        height: unset;
+    }
+
+    .project-container-flexreverse {
+        width: 268px;
+        height: unset;
+    }
+
+    .btn-container {
+        width: 236px;
+    }
 }
 
 @media only screen and (min-width: 320px) {
