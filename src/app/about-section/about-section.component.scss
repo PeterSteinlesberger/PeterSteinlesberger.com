@@ -115,6 +115,10 @@
     .motto-container {
         margin-top: 70px;
     }
+
+    .signature-container {
+        padding: 0 180px 0px 180px;
+    }
 }
 
 @media only screen and (max-width: 1340px) {
@@ -157,6 +161,10 @@
         margin-top: 48px;
         font-size: 24px;
     }
+
+    .signature-container {
+        padding: 0 140px 0px 140px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -179,6 +187,10 @@
 
     .motto-container {
         margin-top:62px;
+    }
+
+    .signature-container {
+        padding: 0 80px 0px 80px;
     }
 }
 
@@ -219,6 +231,11 @@
     .motto-container {
         margin-top:162px;
     }
+
+    .signature-container {
+        padding: 0 48px 0px 48px;
+    }
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -232,6 +249,10 @@
     .info-container {
         right: 140px;
         top: 200px;
+    }
+
+    .contact-btn {
+       margin-top: 48px;
     }
 }
 
@@ -252,6 +273,10 @@
         height: 164px;
         font-size: 15px;
         padding: 12px;
+    }
+
+    .signature-container {
+        padding: 0 24px 0px 24px;
     }
 }
 
