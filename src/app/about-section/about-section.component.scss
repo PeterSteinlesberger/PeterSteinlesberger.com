@@ -80,8 +80,6 @@
     margin-left: -2px;
 }
 
-
-
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -90,38 +88,141 @@
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
+@media only screen and (max-width: 1700px) {
+    .info-container {
+        right: 380px;
+    }
+}
+
 @media only screen and (max-width: 1500px) {
     .content-container {
         padding: 24px 180px 24px 180px;
     }
+
+    .about-img-container {
+        padding: 24px 180px 0px 180px;
+    }
+
+    .info-container {
+        right: 280px;
+    }
 }
 
-@media only screen and (max-width: 1200px ) {
+@media only screen and (max-width: 1340px) {
+    .info-container {
+        right: 280px;
+        width: 360px;
+        height: 240px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
     .content-container {
         padding: 24px 140px 24px 140px;
     }
+
+    .about-img-container {
+        padding: 64px 140px 0px 140px;
+    }
+
+    .info-container {
+        right: 240px;
+        width: 300px;
+        height: 200px;
+        font-size: 15px;
+        padding-bottom: 0;
+    }
+
+    .text-color {
+        margin-top: 12px;
+    }
 }
 
-@media only screen and (max-width: 1024px ) {
-
-}
-
-@media only screen and (max-width: 768px ) {
+@media only screen and (max-width: 1024px) {
     .content-container {
         padding: 0px 80px 0px 80px;
+        height: unset;
+    }
+
+    .about-img-container {
+        padding: 24px 80px 0px 80px;
+    }
+
+    .info-container {
+        right: 200px;
+        width: 270px;
+        height: 180px;
+        font-size: 15px;
+        padding-bottom: 0;
     }
 }
 
-@media only screen and (max-width: 480px ) {
+@media only screen and (max-width: 768px) {
     .content-container {
-        padding: 0px 40px 0px 40px;
+        padding: 0px 48px 0px 48px;
+    }
+
+    .about-img-container {
+        padding: 24px 48px 0px 48px;
+    }
+
+    .about-img {
+        height: unset;
+    }
+
+    .info-container {
+        right: 200px;
+        top: 300px;
+        width: 270px;
+        height: 180px;
+        font-size: 15px;
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .info-container {
+        right: 160px;
+        top: 260px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .info-container {
+        right: 140px;
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content-container {
+        padding: 0px 24px 0px 24px;
         font-size: 22px;
     }
+
+    .about-img-container {
+        padding: 12px 24px 0px 24px;
+    }
+
+    .info-container {
+        right: 100px;
+        top: 140px;
+        width: 224px;
+        height: 164px;
+        font-size: 15px;
+        padding: 12px;
+    }
 }
 
-@media only screen and (min-width: 320px ) {
-    .content-container {
-        padding: 0px 22px 0px 22px;
-        
+@media only screen and (max-width: 380px) {
+  
+    .info-container {
+        right: 30px;
+        top: 140px;
+        width: 254px;
+        height: 184px;
+        font-size: 18px;
+        padding: 12px;
     }
 }
