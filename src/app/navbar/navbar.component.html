@@ -7,6 +7,25 @@ class="header">
     <img *ngIf="!changeImg"  class="logo" src="assets/img/Logo/Logo_whiteNEW.png">
     <img *ngIf="changeImg"  class="logo" src="assets/img/Logo/Logo_blueNEW.png">
   </a>  
+  <!-- Hamburger icon -->
+ <!-- <input class="side-menu" type="checkbox" id="side-menu"/>
+ <label class="hamb" for="side-menu"><span class="hamb-line"></span></label> -->
+ <!-- Navigation Menu -->
+ <!-- <nav class="nav-menu">
+     <ul class="menu">
+         <li><a data-aos-delay="600" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('home'); section ='HOME';" [class.active]="this.section == 'HOME'">HOME</a>
+         </li>
+         <li><a data-aos-delay="500" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('skills'); section ='SKILLS';" [class.active]="this.section == 'SKILLS'">SKILLS</a>
+         </li>
+         <li><a data-aos-delay="400" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('portfolio'); section ='PORTFOLIO';" [class.active]="this.section == 'PORTFOLIO'">PORTFOLIO</a>
+         </li>
+         <li><a data-aos-delay="300" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('aboutme'); section ='ABOUT ME';" [class.active]="this.section == 'ABOUT ME'">ABOUT ME</a>
+         </li>
+         <li><a data-aos-delay="200" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('contact'); section  ='CONTACT';" [class.active]="this.section == 'CONTACT'">CONTACT</a>
+         </li>
+     </ul>
+ </nav> -->
+  <!-- Navigation Menu -->
     <div class="menu">
 <a data-aos-delay="600" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('home'); section ='HOME';" [class.active]="this.section == 'HOME'">HOME</a>
 <a data-aos-delay="500" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('skills'); section ='SKILLS';" [class.active]="this.section == 'SKILLS'">SKILLS</a>
@@ -14,4 +33,7 @@ class="header">
 <a data-aos-delay="300" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('aboutme'); section ='ABOUT ME';" [class.active]="this.section == 'ABOUT ME'">ABOUT ME</a>
 <a data-aos-delay="200" data-aos="fade-left" class="nav" routerLink="/" (click)="navigation.forceNavigate('contact'); section  ='CONTACT';" [class.active]="this.section == 'CONTACT'">CONTACT</a>
     </div>
+
 </header>
+
+ 

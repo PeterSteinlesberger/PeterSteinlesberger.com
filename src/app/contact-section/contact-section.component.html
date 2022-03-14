@@ -7,7 +7,8 @@
         work with me.</p>
     </div>
     <!-- Error-message - input-form not validated -->
-    <div *ngIf="showErrorDialog" [ngStyle]="{'display':!contactForm.form.valid ?  'flex' : 'none' }" class="error-messages-container">
+    <div *ngIf="showErrorDialog" [ngStyle]="{'display':!contactForm.form.valid ?  'flex' : 'none' }"
+      class="error-messages-container">
       <div *ngIf="name.errors?.['required']">
         A name is required.
       </div>
@@ -25,7 +26,7 @@
       </div>
     </div>
   </div>
-
+  <!-- Formular -->
   <div class="contact-form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div>
@@ -65,7 +66,7 @@
           #message="ngModel"></textarea>
       </div>
       <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
-        <button id="contact-btn" *ngIf="!sentMessage" class="contact-button" type="submit">Send message</button>
+        <button id="contact-btn" *ngIf="!sentMessage" class="contact-button" type="submit">SEND MESSAGE</button>
       </div>
     </form>
 
