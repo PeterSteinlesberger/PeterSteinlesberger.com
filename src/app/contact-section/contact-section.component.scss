@@ -158,9 +158,10 @@ textarea {
     background-color: blackrgba(0, 0, 0, 0.25);
     color: rgb(255, 163, 24);
     border: solid 1px rgb(255, 163, 24);
+    box-shadow: -10px 13px 16px rgba(0, 0, 0, 0.7);
     font-size: 16px;
-    box-sizing: border-box;
     animation: animateAlertBox 900ms ease-out 1 both;
+    margin-right: 24px;
 }
 
 .contact-btn {
@@ -228,7 +229,6 @@ textarea {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-
 @media only screen and (max-width: 1800px) {
     .contact-text-container h2 {
         font-size: 44px;
@@ -254,7 +254,7 @@ textarea {
     }
 
     .contact-text-container h2 {
-            font-size: 46px;
+        font-size: 46px;
     }
 }
 
@@ -275,13 +275,17 @@ textarea {
             font-size: 46px;
         }
     }
+
+    .error-messages-container {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
     .contact-section {
         padding: 84px 140px 0 140px;
     }
-    
+
     .contact-form-container {
         width: 360px;
     }
@@ -296,7 +300,7 @@ textarea {
 
 @media only screen and (max-width: 1024px) {
     .contact-section {
-        padding: 84px 80px 0 80px;
+        padding: 140px 80px 0 80px;
         display: block;
         height: 800px;
     }
@@ -310,32 +314,42 @@ textarea {
 
     .contact-text-container {
         width: unset;
-        height: 136px;
-        margin-top: 70px;
+        height: 144px;
         h2 {
             margin-bottom: 20px;
         }
     }
 
     .contact-button {
-margin-top: 28px;
+        margin-top: 28px;
+    }
+
+    .error-messages-container {
+        margin-top: -124px;
+        margin-bottom: 12px;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-text-container {
+       margin-bottom: 24px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .contact-text-container h2 {
-            font-size: 42px;
+        font-size: 42px;
     }
 
     .contact-section {
-        padding: 84px 48px 0px 48px;
+        padding: 124px 48px 0px 48px;
     }
-    
 }
 
 @media only screen and (max-width: 480px) {
     .contact-section {
-           padding: 42px 24px 0px 24px;
+        padding: 42px 24px 0px 24px;
         font-size: 20px;
         h2 {
             font-size: 34px;
@@ -343,17 +357,27 @@ margin-top: 28px;
     }
     .contact-text-container {
         padding-top: 18px;
+        height: 170px;
+    }
+
+    .error-messages-container {
+        margin-top: -160px;
+        height: 128px;
     }
 }
 
 @media only screen and (max-width: 360px) {
     .contact-section {
         padding: 42px 24px 0px 24px;
-     font-size: 20px;
-     h2 {
-         font-size: 28px;
-     }
-}
+        font-size: 20px;
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    .error-messages-container {
+        margin-top: -178px;
+    }
 }
 
 @media only screen and (max-width: 340px) {
