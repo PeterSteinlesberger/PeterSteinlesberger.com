@@ -7,17 +7,11 @@
   </a>
 
   <!-- Navigation Menu -->
-  <nav (window:scroll)="navigation.scroll()" (window:resize)="navigation.scroll()">
-    <input id="menu-toggle" type="checkbox"/>
-    <label id="mobile-menu-label" for="menu-toggle">
-      <div id="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </label>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon">
+  </span></label>
     <!-- The nav menu -->
-    <ul id="menu">
+    <ul class="menu">
       <li><a data-aos-delay="600" data-aos="fade-left" class="nav-item" routerLink="/"
           (click)="navigation.forceNavigate('home'); section ='HOME';" [class.active]="this.section == 'HOME'">HOME</a>
       </li>
@@ -38,9 +32,7 @@
           [class.active]="this.section == 'CONTACT'">CONTACT</a>
       </li>
     </ul>
-
-  </nav>
-
+</header>
 
 
   
@@ -52,4 +44,3 @@
 <a data-aos-delay="200" data-aos="fade-left" class="nav-item" routerLink="/" (click)="navigation.forceNavigate('contact'); section  ='CONTACT';" [class.active]="this.section == 'CONTACT'">CONTACT</a>
     </div> -->
 
-</header>

@@ -26,6 +26,7 @@ h5 {
 p {
     font-size: 18px;
 }
+
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -76,7 +77,4 @@ p {
     p {
         font-size: 20px;
     }
-}
-
-@media only screen and (min-width: 320px) {
 }
