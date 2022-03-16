@@ -47,77 +47,135 @@ header {
 /*
 * ---------------------animated Hambuger Menu---------------------- 
 */
-
-$brand-primary: #ffffff;
-$nav-background: #ffffff;
-$link-color: #ffffff;
-
-
-nav {
-    position: absolute;
-    top: inherit;
-    right: inherit;
-    font-size: 14px;
-    background: transparent;
-    padding: 24px 32px 16px 16px;
-
-    ul {
-        list-style-type: none;
-        display: none;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        li {
-            padding: 24px 16px 24px 59px;
-            height: 32px;
-            a {
-                text-decoration: none;
-                color: $link-color;
-                &:hover {
-                    color: rgb(0, 123, 255);
-                }
-            }
-        }
-    }
-}
-
-#menu {
-    display: flex;
-    justify-content: end;
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
     padding: 0;
-}
-
-//hide checkbox input element
-#menu-toggle {
-    opacity: 0;
-}
-
-// Show menu when #menu-toggle checkbox is checked, use ~
-#menu-toggle:checked ~ #menu {
-    position: absolute;
-    right: -12px;
-    top: 60px;
-    display: flex;
-    padding-top: 12px;
-}
-
-#menu-icon {
-    position: relative;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
     float: right;
-    span {
-        display: block;
-        background: white;
-        width: 24px;
-        height: 2px;
-        margin: 5px;
-        border-radius: 22px;
-        transform-origin: center;
-        transition: 0.3s ease;
-        -webkit-transition: 0.3s ease;
-        transition: 0.3s ease;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
     }
-}
-
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -127,29 +185,15 @@ nav {
 */
 
 @media only screen and (max-width: 2000px) {
-    nav {
-        right: 264px;
-    }
+  
 }
 
 @media only screen and (max-width: 1800px) {
-    nav {
-        ul {
-            li {
-                padding: 24px 16px 24px 58px;
-            }
-        }
-    }
+   
 }
 
 @media only screen and (max-width: 1650px) {
-    nav {
-        ul {
-            li {
-                padding: 24px 16px 24px 36px;
-            }
-        }
-    }
+    
 }
 
 @media only screen and (max-width: 1500px) {
@@ -157,57 +201,18 @@ nav {
         padding: 0px 180px 0px 180px;
     }
 
-    nav {
-        right: 134px;
-    }
 }
 
-@media only screen and (max-width: 1400px) {
-    nav {
-        ul {
-            li {
-                padding: 24px 16px 24px 22px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .menu {
-        width: 500px;
-    }
-}
 
 @media only screen and (max-width: 1200px) {
     header {
         padding: 0px 140px 0px 140px;
-    }
-
-    nav {
-        right: 82px;
-    }
-
-    .menu {
-        width: 460px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     header {
         padding: 0px 80px 0px 80px;
-    }
-    nav {
-        right: 22px;
-    }
-}
-
-@media only screen and (max-width: 940px) {
-    nav {
-        ul {
-            li {
-                padding: 24px 16px 24px 24px;
-            }
-        }
     }
 }
 
@@ -218,64 +223,15 @@ nav {
     }
 }
 
-@media only screen and (min-width: 841px) {
-    nav {
-        margin: -34px 0;
-        display: flex;
-        flex-direction: row;
-
-        ul {
-            display: flex;
-            flex-direction: row;
-        }
-    }
-
-    //checkbox toggle will hide when breakpoint is beyond mobile
-    #menu-toggle,
-    #mobile-menu-label {
-        display: none;
-    }
-
-    #mobile-menu-label {
-        padding: 1.5em 1em;
-    }
-}
-
-@media only screen and (max-width: 840px) {
-    nav {
-        right: 0px;
-        ul {
-            background: rgba(0, 0, 0, 0.75);
-            display: flex;
-
-            li {
-                font-size: 16px;
-                padding: 8px 42px 8px 36px;
-            }
-        }
-    }
-
-    #menu {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     header {
         padding: 0px 48px 0px 48px;
-    }
-    nav {
-        right: 12px;
     }
 }
 
 @media only screen and (max-width: 480px) {
     header {
         padding: 0px 24px 0px 24px;
-    }
-
-    nav {
-        right: -12px;
     }
 
     .logo {
