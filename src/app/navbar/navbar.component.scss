@@ -44,7 +44,107 @@ header {
     color: rgb(0, 123, 255) !important;
 }
 
+/* animated Hambuger Menu */
+$brand-primary: #FFFFFF;
+$nav-background: #FFFFFF;
+$link-color: #FFFFFF;
+$link-hover:   rgb(0, 123, 255);
+// $link-active: darken($link-color,50%);
 
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background: #FFFFFF;
+}
+
+nav {
+    position: absolute;
+    top: inherit;
+    right: inherit;
+    font-size: 14px;
+    background: transparent;
+    padding: 24px 32px 16px 16px;
+
+  ul {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    li {
+      padding: 10px;
+      height: 32px;
+      a {
+        text-decoration: none;
+        color: $link-color;
+        &:hover {
+          color: $link-hover;
+        }
+      }     
+   
+    }
+  }
+}
+
+
+//hide checkbox input element
+#menu-toggle {
+  opacity: 0;
+}
+
+// Show menu when #menu-toggle checkbox is checked, use ~
+#menu-toggle:checked ~ #menu {
+  display: flex;
+ padding: 0; 
+}
+
+#menu-icon {
+  position: relative;
+  float: right;
+  span{
+    display: block;
+    background: white;
+    width: 24px;
+    height: 2px;
+    margin: 5px;
+    border-radius: 22px;
+    transform-origin: center;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+}
+
+@media only screen and (max-width: 840px ) {
+    nav {
+      background: black;
+    }
+}
+
+@media only screen and (min-width: 840px ) {
+  nav {
+    padding: 12px;
+    margin: -22px 0;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+      padding: 24px;
+      }
+    }
+  }
+
+  //checkbox toggle will hide when breakpoint is beyond mobile
+  #menu-toggle,
+  #mobile-menu-label {
+    display: none;
+  }
+
+  #mobile-menu-label {
+    padding: 1.5em 1em;
+  }
+}
 
 
 /*
