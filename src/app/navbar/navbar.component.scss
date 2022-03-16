@@ -51,7 +51,7 @@ header {
 $brand-primary: #ffffff;
 $nav-background: #ffffff;
 $link-color: #ffffff;
-$link-hover: rgb(0, 123, 255);
+
 
 nav {
     position: absolute;
@@ -74,7 +74,7 @@ nav {
                 text-decoration: none;
                 color: $link-color;
                 &:hover {
-                    color: $link-hover;
+                    color: rgb(0, 123, 255);
                 }
             }
         }
@@ -221,6 +221,9 @@ nav {
 @media only screen and (min-width: 841px) {
     nav {
         margin: -34px 0;
+        display: flex;
+        flex-direction: row;
+
         ul {
             display: flex;
             flex-direction: row;
@@ -270,7 +273,13 @@ nav {
     header {
         padding: 0px 24px 0px 24px;
     }
+
     nav {
         right: -12px;
+    }
+
+    .logo {
+        height: 32px;
+        width: 58px;
     }
 }

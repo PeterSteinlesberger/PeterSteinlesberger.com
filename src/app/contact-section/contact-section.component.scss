@@ -157,7 +157,7 @@ textarea {
     padding: 20px;
     background-color: blackrgba(0, 0, 0, 0.25);
     color: rgb(255, 163, 24);
-    border: solid 1px rgb(255, 163, 24);
+    border: solid 2px rgb(255, 163, 24);
     box-shadow: -10px 13px 16px rgba(0, 0, 0, 0.7);
     font-size: 16px;
     animation: animateAlertBox 900ms ease-out 1 both;
@@ -189,7 +189,7 @@ textarea {
         transform: skew(180deg);
         background-color: black;
         color: rgb(218, 11, 11);
-        border: solid 1px rgb(218, 11, 11);
+        border: solid 2px rgb(218, 11, 11);
     }
 }
 
