@@ -94,8 +94,11 @@ nav {
 
 // Show menu when #menu-toggle checkbox is checked, use ~
 #menu-toggle:checked ~ #menu {
+    position: absolute;
+    right: -12px;
+    top: 60px;
     display: flex;
-    padding: 28px 0 16px 0;
+    padding-top: 12px;
 }
 
 #menu-icon {
@@ -133,6 +136,16 @@ nav {
     nav {
         ul {
             li {
+                padding: 24px 16px 24px 58px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    nav {
+        ul {
+            li {
                 padding: 24px 16px 24px 36px;
             }
         }
@@ -146,6 +159,16 @@ nav {
 
     nav {
         right: 134px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    nav {
+        ul {
+            li {
+                padding: 24px 16px 24px 22px;
+            }
+        }
     }
 }
 
@@ -175,6 +198,16 @@ nav {
     }
     nav {
         right: 22px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    nav {
+        ul {
+            li {
+                padding: 24px 16px 24px 24px;
+            }
+        }
     }
 }
 
@@ -211,9 +244,9 @@ nav {
         ul {
             background: rgba(0, 0, 0, 0.75);
             display: flex;
-            
+
             li {
-                font-size: 16px;  
+                font-size: 16px;
                 padding: 8px 42px 8px 36px;
             }
         }
