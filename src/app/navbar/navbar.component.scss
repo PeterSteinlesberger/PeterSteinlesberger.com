@@ -44,19 +44,14 @@ header {
     color: rgb(0, 123, 255) !important;
 }
 
-/* animated Hambuger Menu */
+/*
+* ---------------------animated Hambuger Menu---------------------- 
+*/
+
 $brand-primary: #FFFFFF;
 $nav-background: #FFFFFF;
 $link-color: #FFFFFF;
 $link-hover:   rgb(0, 123, 255);
-// $link-active: darken($link-color,50%);
-
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  background: #FFFFFF;
-}
 
 nav {
     position: absolute;
@@ -82,11 +77,15 @@ nav {
           color: $link-hover;
         }
       }     
-   
     }
   }
 }
 
+#menu {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
 
 //hide checkbox input element
 #menu-toggle {
@@ -116,16 +115,89 @@ nav {
   }
 }
 
+
+/*
+*Meaning of the "only" and "and" keywords:
+*only: The only keyword prevents older browsers that do not support media queries with 
+*    media features from applying the specified styles. It has no effect on modern browsers.
+*and: The and keyword combines a media feature with a media type or other media features.
+*    They are all optional. However, if you use not or only, you must also specify a media type.
+*/
+
+@media only screen and (min-width: 1501px) {
+    nav {
+        right: 264px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    header {
+        padding: 0px 180px 0px 180px;
+    }
+
+    nav {
+        right: 122px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .menu {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        padding: 0px 140px 0px 140px;
+    }
+
+    nav {
+        right: 82px;
+    }
+
+    .menu {
+        width: 460px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        padding: 0px 80px 0px 80px;
+    }
+    nav {
+        right: 22px;
+    }
+}
+
+@media only screen and (max-width: 881px) {
+    .logo {
+        height: 40px;
+        width: 72px;
+    }
+}
+    
+@media only screen and (max-width: 880px) {
+    .logo {
+        height: 40px;
+        width: 72px;
+    }
+}
+
 @media only screen and (max-width: 840px ) {
     nav {
       background: black;
+      li {
+       font-size: 16px;
+        }
+    }
+    #menu {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 840px ) {
   nav {
-    padding: 12px;
-    margin: -22px 0;
+    margin: -34px 0;
     ul {
       display: flex;
       flex-direction: row;
@@ -146,63 +218,12 @@ nav {
   }
 }
 
-
-/*
-*Meaning of the "only" and "and" keywords:
-*only: The only keyword prevents older browsers that do not support media queries with 
-*    media features from applying the specified styles. It has no effect on modern browsers.
-*and: The and keyword combines a media feature with a media type or other media features.
-*    They are all optional. However, if you use not or only, you must also specify a media type.
-*/
-
-@media only screen and (max-width: 1500px) {
-    header {
-        padding: 0px 180px 0px 180px;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .menu {
-        width: 500px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    header {
-        padding: 0px 140px 0px 140px;
-    }
-
-    .menu {
-        width: 460px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    header {
-        padding: 0px 80px 0px 80px;
-    }
-   
-}
-
-@media only screen and (max-width: 880px) {
-    .logo {
-        height: 40px;
-        width: 72px;
-    }
-}
-    
-@media only screen and (max-width: 880px) {
-    .logo {
-        height: 40px;
-        width: 72px;
-    }
-
-}
-
-
 @media only screen and (max-width: 768px) {
     header {
         padding: 0px 48px 0px 48px;
+    }
+    nav {
+        right: 12px;
     }
 }
 
@@ -210,7 +231,8 @@ nav {
     header {
         padding: 0px 24px 0px 24px;
     }
+    nav {
+        right: -12px;
+    }
 }
 
-@media only screen and (min-width: 320px) {
-}
