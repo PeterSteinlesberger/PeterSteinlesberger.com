@@ -48,10 +48,10 @@ header {
 * ---------------------animated Hambuger Menu---------------------- 
 */
 
-$brand-primary: #FFFFFF;
-$nav-background: #FFFFFF;
-$link-color: #FFFFFF;
-$link-hover:   rgb(0, 123, 255);
+$brand-primary: #ffffff;
+$nav-background: #ffffff;
+$link-color: #ffffff;
+$link-hover: rgb(0, 123, 255);
 
 nav {
     position: absolute;
@@ -61,24 +61,24 @@ nav {
     background: transparent;
     padding: 24px 32px 16px 16px;
 
-  ul {
-    list-style-type: none;
-    display: none;
-    flex-direction: column;
-    flex-wrap: wrap;
+    ul {
+        list-style-type: none;
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
 
-    li {
-      padding: 10px;
-      height: 32px;
-      a {
-        text-decoration: none;
-        color: $link-color;
-        &:hover {
-          color: $link-hover;
+        li {
+            padding: 24px 16px 24px 59px;
+            height: 32px;
+            a {
+                text-decoration: none;
+                color: $link-color;
+                &:hover {
+                    color: $link-hover;
+                }
+            }
         }
-      }     
     }
-  }
 }
 
 #menu {
@@ -89,32 +89,31 @@ nav {
 
 //hide checkbox input element
 #menu-toggle {
-  opacity: 0;
+    opacity: 0;
 }
 
 // Show menu when #menu-toggle checkbox is checked, use ~
 #menu-toggle:checked ~ #menu {
-  display: flex;
- padding: 0; 
+    display: flex;
+    padding: 28px 0 16px 0;
 }
 
 #menu-icon {
-  position: relative;
-  float: right;
-  span{
-    display: block;
-    background: white;
-    width: 24px;
-    height: 2px;
-    margin: 5px;
-    border-radius: 22px;
-    transform-origin: center;
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-  }
+    position: relative;
+    float: right;
+    span {
+        display: block;
+        background: white;
+        width: 24px;
+        height: 2px;
+        margin: 5px;
+        border-radius: 22px;
+        transform-origin: center;
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
 }
-
 
 /*
 *Meaning of the "only" and "and" keywords:
@@ -124,9 +123,19 @@ nav {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (min-width: 1501px) {
+@media only screen and (max-width: 2000px) {
     nav {
         right: 264px;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    nav {
+        ul {
+            li {
+                padding: 24px 16px 24px 36px;
+            }
+        }
     }
 }
 
@@ -136,7 +145,7 @@ nav {
     }
 
     nav {
-        right: 122px;
+        right: 134px;
     }
 }
 
@@ -169,13 +178,6 @@ nav {
     }
 }
 
-@media only screen and (max-width: 881px) {
-    .logo {
-        height: 40px;
-        width: 72px;
-    }
-}
-    
 @media only screen and (max-width: 880px) {
     .logo {
         height: 40px;
@@ -183,39 +185,43 @@ nav {
     }
 }
 
-@media only screen and (max-width: 840px ) {
+@media only screen and (min-width: 841px) {
     nav {
-      background: black;
-      li {
-       font-size: 16px;
+        margin: -34px 0;
+        ul {
+            display: flex;
+            flex-direction: row;
         }
     }
-    #menu {
+
+    //checkbox toggle will hide when breakpoint is beyond mobile
+    #menu-toggle,
+    #mobile-menu-label {
         display: none;
+    }
+
+    #mobile-menu-label {
+        padding: 1.5em 1em;
     }
 }
 
-@media only screen and (min-width: 840px ) {
-  nav {
-    margin: -34px 0;
-    ul {
-      display: flex;
-      flex-direction: row;
-      li {
-      padding: 24px;
-      }
+@media only screen and (max-width: 840px) {
+    nav {
+        right: 0px;
+        ul {
+            background: rgba(0, 0, 0, 0.75);
+            display: flex;
+            
+            li {
+                font-size: 16px;  
+                padding: 8px 42px 8px 36px;
+            }
+        }
     }
-  }
 
-  //checkbox toggle will hide when breakpoint is beyond mobile
-  #menu-toggle,
-  #mobile-menu-label {
-    display: none;
-  }
-
-  #mobile-menu-label {
-    padding: 1.5em 1em;
-  }
+    #menu {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -235,4 +241,3 @@ nav {
         right: -12px;
     }
 }
-
