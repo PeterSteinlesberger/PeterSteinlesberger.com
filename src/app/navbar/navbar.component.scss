@@ -1,18 +1,3 @@
-// .header {
-//     position: fixed;
-//     left: 0;
-//     right: 0;
-//     height: 74px;
-//     padding-left: 300px;
-//     padding-right: 300px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     background-color: black;
-//     z-index: 100;
-//     transition: all 125ms linear;
-// }
-
 .logo {
     height: 50px;
     width: 90px;
@@ -20,25 +5,6 @@
         cursor: pointer;
     }
 }
-
-// .menu {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     width: 600px;
-//     height: 74px;
-//     display: flex;
-//     justify-content: space-between;
-//     a {
-//         font-size: 14px;
-//         text-decoration: none;
-//         color: white;
-//         &:hover {
-//             color: rgb(0, 123, 255);
-//             cursor: pointer;
-//         }
-//     }
-// }
 
 .active {
     color: rgb(0, 123, 255) !important;
@@ -58,121 +24,118 @@ header {
     transition: all 125ms linear;
 }
 
-
 /* -----------------------------------------------------------*/
 /* --------------------- Hamburger Menu ----------------------*/
 /*------------------------------------------------------------*/
 
 .top-nav {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     height: 50px;
     background-color: black;
 
-	.menu{
-		list-style: none;
-		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+    .menu {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 0;
-		width: 100%;
+        width: 100%;
         margin: 0;
-		max-height: 0;
-		transition: max-height 250ms ease-out;
+        max-height: 0;
+        transition: max-height 250ms ease-out;
 
-		li a{
-			display: inline-block;
-			min-width: 48px;
-			text-decoration: none;
-			font-size: 14px;
+        li a {
+            display: inline-block;
+            min-width: 48px;
+            text-decoration: none;
+            font-size: 14px;
             color: white;
-            transition: all 125ms ease-in;
-		}
+        }
 
         li a:hover {
             color: rgb(0, 123, 255);
-		}
-	}
+        }
+    }
 
-	
+    .menu-icon {
+        cursor: pointer;
+        display: inline-block;
 
-	.menu-icon{
-		cursor: pointer;
-		display: inline-block;
+        .navicon {
+            background: white;
+            display: block;
+            height: 2px;
+            position: relative;
+            width: 1.625rem;
 
-		.navicon{
-			background: white;
-			display: block;
-			height: 2px;
-			position: relative;
-			width: 1.625rem;
+            &:before,
+            &:after {
+                background: white;
+                content: "";
+                display: block;
+                height: 100%;
+                position: absolute;
+                transition: all 125ms ease-out;
+                width: 100%;
+            }
 
-			&:before, &:after{
-				background: white;
-				content: '';
-				display: block;
-				height: 100%;
-				position: absolute;
-				transition: all 125ms ease-out;
-				width: 100%;
-			}
+            &:before {
+                top: 7px;
+            }
 
-			&:before{
-				top: 7px;
-			}
+            &:after {
+                top: -7px;
+            }
+        }
+    }
 
-			&:after{
-				top: -7px;
-			}
-		}
-	}
+    .menu-btn {
+        display: none;
 
-	.menu-btn{
-		display: none;
+        &:checked ~ .menu {
+            max-height: 800px;
+        }
 
-		&:checked ~ .menu{
-			max-height: 800px;
-		}
+        &:checked ~ .menu-icon .navicon {
+            background: transparent;
 
-		&:checked ~ .menu-icon .navicon{
-			background: transparent;
+            &:before {
+                transform: rotate(-45deg);
+            }
 
-			&:before{
-				transform: rotate(-45deg);
-			}
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
 
-			&:after{
-				transform: rotate(45deg);
-			}
-		}
-
-		&:checked ~ .menu-icon:not(.steps) .navicon{
-			&:before, &:after{
-				top: 0;
-			}
-		}
-	}
+        &:checked ~ .menu-icon:not(.steps) .navicon {
+            &:before,
+            &:after {
+                top: 0;
+            }
+        }
+    }
 }
 // DESKTOP MENU CSS
-  @media (min-width: 840px) {
-		.top-nav li {
-			// margin: 0 10px;
-		}
-		.top-nav .menu {
-			width: 400px;
-			max-height: none;
-			flex-direction: row;
-            justify-content: space-between;
-		}
-		.top-nav .menu-icon {
-			display: none;
-		}
-  }
-
+@media (min-width: 800px) {
+    .top-nav li {
+        // margin: 0 10px;
+    }
+    .top-nav .menu {
+        width: auto;
+        max-height: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .top-nav .menu-icon {
+        display: none;
+    }
+}
 
 /*
 *Meaning of the "only" and "and" keywords:
@@ -183,24 +146,41 @@ header {
 */
 
 @media only screen and (max-width: 2000px) {
-  
+    .top-nav .menu {
+        width: 600px;
+    }
 }
 
 @media only screen and (max-width: 1800px) {
-   
 }
 
-@media only screen and (max-width: 1650px) {
-    
+@media only screen and (max-width: 1650px) { 
+    .top-nav .menu {
+        width: 518px;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
     header {
         padding: 0px 180px 0px 180px;
     }
-
+    .top-nav .menu {
+        width: 500px;
+    }
+   
 }
 
+@media only screen and (max-width: 1400px) {
+    .top-nav .menu {
+        width: 444px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .top-nav .menu {
+        width: 400px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     header {
@@ -233,7 +213,7 @@ header {
     }
 
     .logo {
-        height: 32px;
-        width: 58px;
+        height: 35px;
+        width: 64px;
     }
 }
