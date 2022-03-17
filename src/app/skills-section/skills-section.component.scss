@@ -8,7 +8,7 @@
 }
 
 .overview-container {
-    width: 1200px;
+    width: 1000px;
     height: 460px;
     margin-top: 70px;
     display: flex;
@@ -69,16 +69,14 @@
 @media only screen and (max-width: 1500px) {
     .overview-container {
         width: 1000px;
-        height: 680px;
       padding-bottom: 60px;
     }
-    
 }
 
 @media only screen and (max-width: 1024px ) {
     .overview-container {
         width: 800px;  
-        height: 912px;
+        height: 670px;
         padding-bottom: 60px;   
     }
 }
@@ -86,8 +84,8 @@
 @media only screen and (max-width: 660px ) {
     .overview-container {
         width: 500px;
-        height: 1760px;
-     
+        height: 1360px;
+        margin-top: 0;
     }
 }
 
