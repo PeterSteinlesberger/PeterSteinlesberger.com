@@ -124,11 +124,9 @@ header {
         }
     }
 }
-// DESKTOP MENU CSS
+
+/* Desktop Menu */
 @media (min-width: 800px) {
-    .top-nav li {
-        // margin: 0 10px;
-    }
     .top-nav .menu {
         width: auto;
         max-height: none;
@@ -231,5 +229,9 @@ header {
     .logo {
         height: 35px;
         width: 64px;
+    }
+
+    .top-nav .menu li a {
+       font-size: 18px;
     }
 }
