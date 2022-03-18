@@ -39,6 +39,8 @@
 }
 
 .motto-container {
+    display: flex;
+    
     height: 84px;
     width: 100%;
     margin-top: 26px;
@@ -95,20 +97,32 @@
     font-size: 14px;
 }
 
-.signature-container {
-    height: 250px;
-    width: 100%;
-    padding-top: 5px;
-    padding-left: 300px;
-    padding-right: 300px;
-    box-sizing: border-box;
-}
-
 .signature-img {
     height: 80px;
     margin-left: -2px;
+    margin-top: 28px;
 }
 
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn {
+    position: unset;
+    width: 60px;
+    padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 163, 24);
+    text-decoration: none;
+    transition: linear 125ms;
+    &:hover {
+      color: rgb(0, 153, 255);
+    }
+  }
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -257,9 +271,7 @@
         // top: 200px;
     }
 
-    .contact-btn {
-        margin-top: 48px;
-    }
+ 
 }
 
 @media only screen and (max-width: 480px) {
