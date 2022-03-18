@@ -9,7 +9,6 @@
 }
 
 .content-container {
-    height: 430px;
     width: 100%;
     padding-top: 65px;
     padding-left: 300px;
@@ -21,19 +20,18 @@
 
 .about-img-container {
     position: relative;
-    height: 520px;
     width: 100%;
-    padding-top: 65px;
+    padding-top: 24px;
     padding-left: 300px;
     padding-right: 300px;
     box-sizing: border-box;
 }
 
 .about-img {
-    height: 300px;
     width: 100%;
     object-fit: cover;
-    object-position: 50% 40%;
+    // object-position: 50% 40%;
+  
 }
 
 .motto-container {
@@ -48,9 +46,10 @@
     position: absolute;
     top: 217px;
     right: 462px;
-    height: 300px;
-    width: 442px;
-    padding: 0px 40px 30px 40px;
+    width: 340px;
+    height: 220px;
+    font-size: 16px;
+    padding: 8px 40px 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,10 +58,11 @@
     background-color: rgb(33, 33, 34);
 }
 
-.text-color {
+.text-style {
     margin-bottom: 2px;
-    margin-top: 30px;
+    margin-top: 26px;
     color: rgb(255, 153, 0);
+    font-size: 14px;
 }
 
 .signature-container {
@@ -89,9 +89,7 @@
 
 @media only screen and (max-width: 1700px) {
     .info-container {
-        right: 380px;
-        height: 240px;
-        width: 340px;
+      
     }
 
     .motto-container {
@@ -101,15 +99,15 @@
 
 @media only screen and (max-width: 1500px) {
     .content-container {
-        padding: 24px 180px 24px 180px;
+        padding: 0 180px;
     }
 
     .about-img-container {
-        padding: 24px 180px 0px 180px;
+        padding: 24px 180px;
     }
 
     .info-container {
-        right: 280px;
+        
     }
 
     .motto-container {
@@ -123,10 +121,7 @@
 
 @media only screen and (max-width: 1340px) {
     .info-container {
-        right: 280px;
-        width: 320px;
-        height: 240px;
-        font-size: 18px;
+       
     }
 
     .motto-container {
@@ -137,20 +132,20 @@
 
 @media only screen and (max-width: 1200px) {
     .content-container {
-        padding: 24px 140px 24px 140px;
+        padding: 0 140px;
     }
 
     .about-img-container {
-        padding: 64px 140px 0px 140px;
+        padding: 24px 140px;
     }
 
     .info-container {
-        top: 270px;
-        right: 240px;
-        width: 254px;
-        height: 200px;
-        font-size: 15px;
-        padding: 32px;
+        // top: 270px;
+        // right: 240px;
+        // width: 254px;
+        // height: 200px;
+        // font-size: 15px;
+        // padding: 32px;
     }
 
     .text-color {
@@ -169,20 +164,20 @@
 
 @media only screen and (max-width: 1024px) {
     .content-container {
-        padding: 0px 80px 0px 80px;
+        padding: 0px 80px;
         height: unset;
     }
 
     .about-img-container {
-        padding: 24px 80px 0px 80px;
+        padding: 24px 80px;
     }
 
     .info-container {
-        right: 200px;
-        width: 270px;
-        height: 180px;
-        font-size: 15px;
-        padding: 28px;
+        // right: 200px;
+        // width: 270px;
+        // height: 180px;
+        // font-size: 15px;
+        // padding: 28px;
     }
 
     .motto-container {
@@ -190,7 +185,7 @@
     }
 
     .signature-container {
-        padding: 0 80px 0px 80px;
+        padding: 0 80px;
     }
 }
 
@@ -208,11 +203,11 @@
 
 @media only screen and (max-width: 768px) {
     .content-container {
-        padding: 0px 48px 0px 48px;
+        padding: 0px 48px;
     }
 
     .about-img-container {
-        padding: 24px 48px 0px 48px;
+        padding: 24px 48px;
     }
 
     .about-img {
@@ -220,12 +215,12 @@
     }
 
     .info-container {
-        right: 200px;
-        top: 300px;
-        width: 270px;
-        height: 180px;
-        font-size: 15px;
-        padding: 0 14px 0 14px;
+        // right: 200px;
+        // top: 300px;
+        // width: 270px;
+        // height: 180px;
+        // font-size: 15px;
+        // padding: 0 14px 0 14px;
     }
 
     .motto-container {
@@ -240,15 +235,15 @@
 
 @media only screen and (max-width: 680px) {
     .info-container {
-        right: 160px;
-        top: 260px;
+        // right: 160px;
+        // top: 260px;
     }
 }
 
 @media only screen and (max-width: 580px) {
     .info-container {
-        right: 140px;
-        top: 200px;
+        // right: 140px;
+        // top: 200px;
     }
 
     .contact-btn {
@@ -258,36 +253,36 @@
 
 @media only screen and (max-width: 480px) {
     .content-container {
-        padding: 0px 24px 0px 24px;
+        padding: 0px 24px;
         font-size: 22px;
     }
 
     .about-img-container {
-        padding: 12px 24px 0px 24px;
+        padding: 12px 24px;
     }
 
     .info-container {
-        right: 100px;
-        top: 170px;
-        width: 224px;
-        height: 164px;
-        font-size: 15px;
-        padding: 12px;
+        // right: 100px;
+        // top: 170px;
+        // width: 224px;
+        // height: 164px;
+        // font-size: 15px;
+        // padding: 12px;
     }
 
     .signature-container {
-        padding: 0 24px 0px 24px;
+        padding: 0 24px;
     }
 }
 
 @media only screen and (max-width: 380px) {
     .info-container {
-        right: 0px;
-        top: 154px;
-        width: 100%;
-        height: 220px;
-        font-size: 20px;
-        padding: 32px;
+        // right: 0px;
+        // top: 154px;
+        // width: 100%;
+        // height: 220px;
+        // font-size: 20px;
+        // padding: 32px;
     }
 
     .motto-container {
