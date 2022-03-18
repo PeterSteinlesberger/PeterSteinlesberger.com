@@ -40,7 +40,6 @@
 
 .motto-container {
     display: flex;
-    
     height: 84px;
     width: 100%;
     margin-top: 26px;
@@ -263,6 +262,10 @@
         // right: 160px;
         // top: 260px;
     }
+
+    .btn-container {
+        margin-top: 28px;
+    }
 }
 
 @media only screen and (max-width: 580px) {
@@ -270,8 +273,15 @@
         // right: 140px;
         // top: 200px;
     }
+    .about-img-container {
+        font-size: 20px;
+    }
 
- 
+    .signature-img {
+        height: 66px;
+        margin-left: -2px;
+        margin-top: 14px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
