@@ -31,7 +31,6 @@
     position: relative;
     width: 100%;
     object-fit: cover;
-    // object-position: 50% 40%;
 }
 
 .position-container {
@@ -130,6 +129,7 @@
 .transform-container {
     transition: transform 425ms;
 }
+
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -137,14 +137,6 @@
 *and: The and keyword combines a media feature with a media type or other media features.
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
-
-@media only screen and (max-width: 1700px) {
-    .info-container {
-    }
-
-    .motto-container {
-    }
-}
 
 @media only screen and (max-width: 1500px) {
     .content-container {
@@ -155,22 +147,8 @@
         padding: 24px 180px;
     }
 
-    .info-container {
-    }
-
-    .motto-container {
-    }
-
     .signature-container {
         padding: 0 180px 0px 180px;
-    }
-}
-
-@media only screen and (max-width: 1340px) {
-    .info-container {
-    }
-
-    .motto-container {
     }
 }
 
@@ -181,18 +159,6 @@
 
     .about-img-container {
         padding: 24px 140px;
-    }
-
-    .info-container {
-        // top: 270px;
-        // right: 240px;
-        // width: 254px;
-        // height: 200px;
-        // font-size: 15px;
-        // padding: 32px;
-    }
-
-    .motto-container {
     }
 
     .signature-container {
@@ -224,18 +190,12 @@
         font-size: 14px;
     }
 
-    .motto-container {
-    }
-
     .signature-container {
         padding: 0 80px;
     }
 }
 
 @media only screen and (max-width: 940px) {
-    .motto-container {
-    }
-
     .about-img-container {
         height: unset;
     }
@@ -252,18 +212,6 @@
 
     .about-img {
         height: unset;
-    }
-
-    .info-container {
-        // right: 200px;
-        // top: 300px;
-        // width: 270px;
-        // height: 180px;
-        // font-size: 15px;
-        // padding: 0 14px 0 14px;
-    }
-
-    .motto-container {
     }
 
     .signature-container {
@@ -320,7 +268,6 @@
     }
     .transform-container {
         &:hover {
-            // cursor: pointer;
             -ms-transform: scale(2.8); /* IE 9 */
             -webkit-transform: scale(2.8); /* Safari 3-8 */
             transform: scale(2.8);
