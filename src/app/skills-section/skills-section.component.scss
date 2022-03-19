@@ -1,32 +1,34 @@
 .skills-container {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: black;
+    overflow: hidden;
 }
 
 .overview-container {
-    width: 1000px;
-    height: 460px;
-    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 1000px;
+    height: 460px;
+    margin-top: 70px;
 }
 
 .skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 140px;
     width: 240px;
     margin-left: 28px;
     margin-right: 28px;
     background-color: white;
     color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     border-radius: 5px;
     font-size: 24px;
 }
@@ -56,8 +58,6 @@
     width: 50px;
 }
 
-
-
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -69,19 +69,19 @@
 @media only screen and (max-width: 1500px) {
     .overview-container {
         width: 1000px;
-      padding-bottom: 60px;
+        padding-bottom: 60px;
     }
 }
 
-@media only screen and (max-width: 1024px ) {
+@media only screen and (max-width: 1024px) {
     .overview-container {
-        width: 800px;  
+        width: 800px;
         height: 670px;
-        padding-bottom: 60px;   
+        padding-bottom: 60px;
     }
 }
 
-@media only screen and (max-width: 660px ) {
+@media only screen and (max-width: 660px) {
     .overview-container {
         width: 330px;
         height: 1360px;
@@ -89,9 +89,8 @@
     }
 }
 
-@media only screen and (max-width: 480px ) {
+@media only screen and (max-width: 480px) {
     .skill-container {
         font-size: 28px;
     }
 }
-

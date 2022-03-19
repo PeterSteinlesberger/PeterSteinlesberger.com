@@ -1,12 +1,13 @@
 .project-section {
-    background-color: rgb(33, 33, 34);
-    width: 100%;
-    padding-top: 90px;
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(33, 33, 34);
+    width: 100%;
+    padding-top: 90px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .headline {

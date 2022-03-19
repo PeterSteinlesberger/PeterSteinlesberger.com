@@ -2,6 +2,7 @@
     background-color: black;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .profile-img {
@@ -154,8 +155,11 @@ span {
 @media only screen and (max-width: 480px) {
     .h1 {
         left: 58px;
-        font-size: 32px;
         top: 240px;
+        width: 256px;
+        margin-left: 0;
+        margin-right: 0; 
+        font-size: 32px;
     }
 
     .profile-img {
