@@ -38,7 +38,7 @@
             src="assets/img/Icons/mark_accept.png">
         </div>
         <input data-aos-delay="250" data-aos="fade-left" class="input-field" type="text"
-          placeholder="Your and/or your companys name..." id="name" required [(ngModel)]="contact.name" name="name"
+          id="name" required [(ngModel)]="contact.name" name="name"
           minlength="3" #name="ngModel" />
       </div>
       <div>
@@ -50,7 +50,7 @@
             src="assets/img/Icons/mark_accept.png">
         </div>
         <input data-aos-delay="300" data-aos="fade-left" class="input-field" type="email"
-          placeholder="Your Email address..." [(ngModel)]="contact.email" name="email" email required minlength="8"
+           [(ngModel)]="contact.email" name="email" email required minlength="8"
           #email="ngModel" />
       </div>
       <div>
@@ -62,7 +62,7 @@
             src="assets/img/Icons/mark_accept.png">
         </div>
         <textarea data-aos-delay="350" data-aos="fade-left" class="input-field textarea" rows="10"
-          placeholder="Your message..." [(ngModel)]="contact.message" name="message" required minlength="20"
+          [(ngModel)]="contact.message" name="message" required minlength="20"
           #message="ngModel"></textarea>
       </div>
       <div data-aos-delay="400" data-aos="fade-left" class="btn-container">
